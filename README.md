@@ -1,5 +1,1 @@
-Hi there!
-
-[Here](https://defgsus.github.io/)'s a descriptive list of all my repos.
-
-And a [blog](https://defgsus.github.io/).
+Static page generator for [defgsus.github.io](https://defgsus.github.io/)

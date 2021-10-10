@@ -30,8 +30,25 @@
             
                 <div class="repo" id="defgsus">
                     <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
+                        <img class="language" src="img/tags/txt.png" title="txt">
                         <div class="name margin-right"><a href="https://github.com/defgsus/defgsus">defgsus</a></div>
+                        <div class="tags grow">
+                            
+                                <div class="tag">doc</div>
+                            
+                        </div>
+                        <div class="date">2021/10/10</div>
+                    </div>
+                    <div class="inside">
+                        <div class="description short"><p>The profile README</p></div>
+                        
+                    </div>
+                </div>
+            
+                <div class="repo" id="defgsus.github.io">
+                    <div class="flex-row">
+                        <img class="language" src="img/tags/python.png" title="python">
+                        <div class="name margin-right"><a href="https://github.com/defgsus/defgsus.github.io">defgsus.github.io</a></div>
                         <div class="tags grow">
                             
                                 <div class="tag">doc</div>
@@ -126,7 +143,7 @@ functions.</p></div>
                             <div class="description long"><p>This is recording hundrets of public office calendars across germany at an interval of
 15 minutes.</p>
 <p>It's much more work than i anticipated in the first place and i'm still not sure
-exactly why i do it.</p></div>
+exactly for what purpose.</p></div>
                         
                     </div>
                 </div>
@@ -273,6 +290,13 @@ The python raytracer is so terribly slow that i actually did not fix the immedia
                     <div class="inside">
                         <div class="description short"><p>toying with another game idea and the pymunk physics framework</p></div>
                         
+                            <div class="description long"><p>Tried: A 2d minecraft.</p>
+<p>Learned: That in order to pass objects, you have to completely destroy them or build a tunnel or somehting..</p>
+<p>This came out of a deep depression through covid winter 2020 with too much home schooling and home officing
+and no place to hide. In the end i did not came across the challange of designing a physical-model-based
+character that actually can walk. Tried evolutionary algos with complicated fitness evaluation and
+training pools stored in <a href="https://www.elastic.co/elasticsearch/">elasticsearch</a>.</p></div>
+                        
                     </div>
                 </div>
             
@@ -288,7 +312,20 @@ The python raytracer is so terribly slow that i actually did not fix the immedia
                         <div class="date">2020/06/05 to 10/09</div>
                     </div>
                     <div class="inside">
-                        <div class="description short"><p>In an amazon fulfillment center near you the job application turns out to be against a bunch of newly designed super-efficient robots!</p></div>
+                        <div class="description short"><p>In an amazon fulfillment center near you the job application turns out to be
+against a bunch of newly designed super-efficient robots!</p></div>
+                        
+                            <div class="description long"><p>Started reworking the <a href="#pickpack">pickpack</a> idea into python to experiment
+with <a href="https://en.wikipedia.org/wiki/Expected_utility_hypothesis">Maximum Expected Utility</a> described by
+<a href="http://aima.cs.berkeley.edu/">Artificial Intelligence: A Modern Approach (Russel &amp; Norvig)</a>.
+But it's still missing a straight game design.</p>
+<p>Basically, you are picking and packing in an amazon fulfillment center against a bunch of
+super-efficient robots. The idea is, that the robots would actually need to cheat
+(stay in your way, put wrong stuff into your parcels, ..) if you are really good.
+Of course, if the ever-present fulfillment center's performance measures are too low,
+the manager should come complaining.</p>
+<p>Learned: In python you won't get millions of search branches checked per second so you
+have to rely more on heuristics and cheats.</p></div>
                         
                     </div>
                 </div>
@@ -305,7 +342,14 @@ The python raytracer is so terribly slow that i actually did not fix the immedia
                         <div class="date">2020/05/26</div>
                     </div>
                     <div class="inside">
-                        <div class="description short"><p>Yet another TReNDS Neuroimaging competition sourcecode</p></div>
+                        <div class="description short"><p>Yet another <a href="https://www.kaggle.com/c/trends-assessment-prediction">TReNDS Neuroimaging competition</a> sourcecode</p></div>
+                        
+                            <div class="description long"><p>It was hosted on kaggle and <strong>a lot</strong> of teams joined. I only used <strong>relevance vector regression</strong> on
+the small MRT-based CSV tables which bought an evaluation error of 16.4% and place 891.
+The top solutions where 15.6%.</p>
+<p>Learned: That this particular problem in the competition was not helped by mere compute. The best teams used
+all kinds of complicated things and ensembled them together to gain just one percent better than a simple RVR
+on a fraction of the data.</p></div>
                         
                     </div>
                 </div>
@@ -324,6 +368,8 @@ The python raytracer is so terribly slow that i actually did not fix the immedia
                     <div class="inside">
                         <div class="description short"><p>historic archive of free parking places across germany</p></div>
                         
+                            <div class="description long"><p>The daily export of <a href="#parking-scraper">parking-scraper</a>.</p></div>
+                        
                     </div>
                 </div>
             
@@ -340,6 +386,10 @@ The python raytracer is so terribly slow that i actually did not fix the immedia
                     </div>
                     <div class="inside">
                         <div class="description short"><p>collection of scrapers to get parking space occupancy data across germany</p></div>
+                        
+                            <div class="description long"><p>It scrapes all those different little websites where free parking lots are displayed and stores the
+numbers - every 5 minutes.
+There's a small article about the <a href="https://defgsus.github.io/blog/2021/04/08/one-year-parking.html">1st year of data</a>.</p></div>
                         
                     </div>
                 </div>
@@ -364,6 +414,9 @@ The python raytracer is so terribly slow that i actually did not fix the immedia
                     <div class="inside">
                         <div class="description short"><p>react game in progress</p></div>
                         
+                            <div class="description long"><p>Actually it's a political statement. Or it was planned to be. But it's
+missing the game idea. See <a href="#pypickpack">pypickpack</a></p></div>
+                        
                     </div>
                 </div>
             
@@ -381,6 +434,8 @@ The python raytracer is so terribly slow that i actually did not fix the immedia
                             
                                 <div class="tag">data</div>
                             
+                                <div class="tag">shader</div>
+                            
                                 <div class="tag">visual</div>
                             
                         </div>
@@ -388,6 +443,15 @@ The python raytracer is so terribly slow that i actually did not fix the immedia
                     </div>
                     <div class="inside">
                         <div class="description short"><p>momentarily a django using the shadertoy public api</p></div>
+                        
+                            <div class="description long"><p>Another personal plaything related to <a href="https://shadertoy.com">shadertoy.com</a>. Besids the official API
+it also allows crawling the shadertoy website / internal API to retrieve comments.</p>
+<p>One of the goals is to be able to somehow search for specific formulas / syntax trees, by parsing
+all the GLSL in python. The parser somewhat works by adjusting an old
+<a href="https://www2.cs.arizona.edu/~debray/Teaching/CSc453/DOCS/cminusminusspec.html">Backus-Naur for C--</a> that i found
+and adding the few GLSL specific things (<a href="https://github.com/defgsus/shadertoz/blob/b89c15db6dd4821126a3e970a57eadcb97f529d5/shaders/util/glsl/glsl.lark">glsl.lark</a>)
+and run it in <a href="https://github.com/lark-parser/lark">lark</a>. But it exponentially explodes in runtime when shown
+long and complicated formulas.</p></div>
                         
                     </div>
                 </div>
@@ -405,6 +469,8 @@ The python raytracer is so terribly slow that i actually did not fix the immedia
                     </div>
                     <div class="inside">
                         <div class="description short"><p>evolutionary python framework</p></div>
+                        
+                            <div class="description long"><p>Guess everybody has to release one of these libs once. It's not particularily good or clever, or even tested twice.</p></div>
                         
                     </div>
                 </div>
@@ -881,7 +947,7 @@ The python raytracer is so terribly slow that i actually did not fix the immedia
                             
                                 <div class="tag">ai</div>
                             
-                                <div class="tag">glsl</div>
+                                <div class="tag">shader</div>
                             
                         </div>
                         <div class="date">2016/02/09 to 02/10</div>

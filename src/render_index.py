@@ -34,7 +34,7 @@ def get_repo_list():
 
 
 def get_repo_infos():
-    data = yaml.safe_load((TEMPLATE_PATH / "repo-descriptions.yaml").read_text())
+    data = yaml.safe_load((TEMPLATE_PATH / "repo-infos.yaml").read_text())
     data = {
         key: {
             key2: markdown.markdown(value2) if "desc" in key2 else value2
@@ -81,7 +81,7 @@ def update_repo_yaml():
     repo_list = get_repo_list()
     # repo_info = get_repo_descs()
 
-    with open(TEMPLATE_PATH / "repo-descriptions.yaml", "w") as fp:
+    with open(TEMPLATE_PATH / "repo-infos.yaml", "w") as fp:
         for repo in repo_list:
             print(f"{repo['name']}:", file=fp)
             print(f"  short_desc: |", file=fp)

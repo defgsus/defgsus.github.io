@@ -1,4 +1,11 @@
 defgsus:
+  language: txt
+  categories: doc
+  short_desc: |
+    The profile README
+  long_desc: ''
+
+defgsus.github.io:
   categories: doc
   short_desc: |
     The index
@@ -42,7 +49,7 @@ office-schedule-scraper:
     15 minutes.
 
     It's much more work than i anticipated in the first place and i'm still not sure
-    exactly why i do it.
+    exactly for what purpose.
 
 clipig:
   categories: visual
@@ -103,49 +110,94 @@ cthulhu2d:
   categories: game
   short_desc: |
     toying with another game idea and the pymunk physics framework
-  long_desc: ''
+  long_desc: |
+    Tried: A 2d minecraft.
+
+    Learned: That in order to pass objects, you have to completely destroy them or build a tunnel or somehting..
+
+    This came out of a deep depression through covid winter 2020 with too much home schooling and home officing
+    and no place to hide. In the end i did not came across the challange of designing a physical-model-based
+    character that actually can walk. Tried evolutionary algos with complicated fitness evaluation and
+    training pools stored in [elasticsearch](https://www.elastic.co/elasticsearch/).
 
 pypickpack:
   categories: game
   short_desc: |
-    In an amazon fulfillment center near you the job application turns out to be against a bunch of newly designed super-efficient robots!
-  long_desc: ''
+    In an amazon fulfillment center near you the job application turns out to be
+    against a bunch of newly designed super-efficient robots!
+  long_desc: |
+    Started reworking the [pickpack](#pickpack) idea into python to experiment
+    with [Maximum Expected Utility](https://en.wikipedia.org/wiki/Expected_utility_hypothesis) described by
+    [Artificial Intelligence: A Modern Approach (Russel & Norvig)](http://aima.cs.berkeley.edu/).
+    But it's still missing a straight game design.
+
+    Basically, you are picking and packing in an amazon fulfillment center against a bunch of
+    super-efficient robots. The idea is, that the robots would actually need to cheat
+    (stay in your way, put wrong stuff into your parcels, ..) if you are really good.
+    Of course, if the ever-present fulfillment center's performance measures are too low,
+    the manager should come complaining.
+
+    Learned: In python you won't get millions of search branches checked per second so you
+    have to rely more on heuristics and cheats.
 
 trends-competition:
   categories: ai
   short_desc: |
-    Yet another TReNDS Neuroimaging competition sourcecode
-  long_desc: ''
+    Yet another [TReNDS Neuroimaging competition](https://www.kaggle.com/c/trends-assessment-prediction) sourcecode
+  long_desc: |
+    It was hosted on kaggle and **a lot** of teams joined. I only used **relevance vector regression** on
+    the small MRT-based CSV tables which bought an evaluation error of 16.4% and place 891.
+    The top solutions where 15.6%.
+
+    Learned: That this particular problem in the competition was not helped by mere compute. The best teams used
+    all kinds of complicated things and ensembled them together to gain just one percent better than a simple RVR
+    on a fraction of the data.
 
 parking-data:
   categories: data
   short_desc: |
     historic archive of free parking places across germany
-  long_desc: ''
+  long_desc: |
+    The daily export of [parking-scraper](#parking-scraper).
 
 parking-scraper:
   categories: data
   short_desc: |
     collection of scrapers to get parking space occupancy data across germany
-  long_desc: ''
+  long_desc: |
+    It scrapes all those different little websites where free parking lots are displayed and stores the
+    numbers - every 5 minutes.
+    There's a small article about the [1st year of data](https://defgsus.github.io/blog/2021/04/08/one-year-parking.html).
 
 pickpack:
   categories: game
   short_desc: |
     react game in progress
-  long_desc: ''
+  long_desc: |
+    Actually it's a political statement. Or it was planned to be. But it's
+    missing the game idea. See [pypickpack](#pypickpack)
 
 shadertoz:
-  categories: visual data
+  categories: visual data shader
   short_desc: |
     momentarily a django using the shadertoy public api
-  long_desc: ''
+  long_desc: |
+    Another personal plaything related to [shadertoy.com](https://shadertoy.com). Besids the official API
+    it also allows crawling the shadertoy website / internal API to retrieve comments.
+
+    One of the goals is to be able to somehow search for specific formulas / syntax trees, by parsing
+    all the GLSL in python. The parser somewhat works by adjusting an old
+    [Backus-Naur for C--](https://www2.cs.arizona.edu/~debray/Teaching/CSc453/DOCS/cminusminusspec.html) that i found
+    and adding the few GLSL specific things ([glsl.lark](https://github.com/defgsus/shadertoz/blob/b89c15db6dd4821126a3e970a57eadcb97f529d5/shaders/util/glsl/glsl.lark))
+    and run it in [lark](https://github.com/lark-parser/lark). But it exponentially explodes in runtime when shown
+    long and complicated formulas.
 
 pyvolution:
   categories: lib
   short_desc: |
     evolutionary python framework
-  long_desc: ''
+  long_desc: |
+    Guess everybody has to release one of these libs once. It's not particularily good or clever, or even tested twice.
 
 processflow:
   categories: lib
@@ -306,7 +358,7 @@ solstice:
   long_desc: ''
 
 neurost:
-  categories: ai glsl
+  categories: ai shader
   short_desc: |
     Neuronal ShaderToy Framework
   long_desc: ''
