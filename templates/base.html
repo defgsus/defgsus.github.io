@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="def.gsus-">
+    <meta name="description" content="{{ meta.description }}">
+    <link rel="stylesheet" href="style.css">
+    <title>{{ meta.title }}</title>
+</head>
+<body>
+
+<main class="page-content">
+    <div class="wrapper">
+        {% block content %}
+        {{ content }}
+        {% endblock %}
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+*.iml
+.idea/
+
+*.json
+cache/
+env/
+*credentials*
+
+*.pyc
+__pycache__/
+

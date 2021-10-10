@@ -1,0 +1,310 @@
+wurst:
+  short_desc: |
+    **w**eb-**u**tilized **r**eact **s**ynthesizer **t**est
+  long_desc: |
+    Just stumbled over the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
+    Actually i wanted to see if it's possible to program an efficient synthesizer in javascript.
+    As it turns out, this API provides an interface that is exactly for building synthesizers...
+
+    So then i wanted to see if [React](https://reactjs.org/) can be used to drive the event-loop
+    of the step-sequencers. Did not want to use [redux](https://redux.js.org/) this time and learned about
+    [React Hooks](https://reactjs.org/docs/hooks-reference.html) and especially
+    [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer) and all these magic
+    functions.
+
+office-schedule-data:
+  short_desc: |
+    historic snapshots of free office appointment dates
+  long_desc: |
+    The data output of [office-schedule-scraper](#office-schedule-scraper).
+
+kindergarten-times:
+  short_desc: |
+    historic timeline of arrival at kindergarten
+  long_desc: ''
+
+office-schedule-scraper:
+  short_desc: |
+    Scraper for (german) free dates at the public offices
+  long_desc: |
+    This is recording hundrets of public office calendars across germany at an interval of
+    15 minutes.
+
+    It's much more work than i anticipated in the first place and i'm still not sure
+    exactly why i do it.
+
+clipig:
+  short_desc: |
+    [OpenAI](https://openai.com)'s [CLIP](https://github.com/openai/CLIP)
+    based image generator with complex config file controlled transformation and training pipelines
+  long_desc: |
+    *The web* has become quite an amazing place: Train a model on some of it's data. Ask for a depiction
+    of your favorite fantasy book. [And it just does](https://defgsus.github.io/blog/2021/04/28/malazan-clip-features.html)!
+
+    This is a somewhat usable tool for generating images using the CLIP critique. Check the
+    [walkthrough](https://defgsus.github.io/clipig/walkthrough.html)
+    and [some experimental results](https://defgsus.github.io/blog/2021/06/09/clipig-animal-transfer.html).
+
+image-scraper:
+  short_desc: |
+    Some basic image scraper with django as orm and server
+  long_desc: |
+    Actually, this is just a small dev tool to download images (porn images mainly),
+    rate them via [CLIP](https://github.com/openai/CLIP) and search through them using
+    natural language and reference images.
+
+blog:
+  short_desc: |
+    Repo of my blog
+  long_desc: |
+    Guess the virus has taken it's toll. Or maybe because i'm 40. Anyways, this is my programming
+    blog. Using [Jekyll](https://jekyllrb.com/) and [Jupyter notebooks](https://jupyter.org/)
+    as the basis for static site generation.
+
+ufa:
+  short_desc: |
+    **Überwachung für Alle** - self-surveillance browser add-on
+  long_desc: |
+    Spy on your own browser actions (request, keystrokes, mouse actions) using this
+    small web extension and [Elasticsearch](https://www.elastic.co/elasticsearch/).
+
+    Learned about the (somewhat unified) Browser Extensions API
+    ([MDN](https://developer.mozilla.org/en-US/Add-ons/WebExtensions), [Chrome](https://developer.chrome.com/docs/extensions/reference/))
+    which is so powerful that i **do not trust any extension** except my own ones.
+    Oh, and [uBlock Origin](https://ublockorigin.com/), of course.
+
+symmetrical-disco:
+  short_desc: |
+    ray-tracer entirely in python
+  long_desc: |
+    Thought: If i write the raytracer (in this case a sphere-tracer) in python, there are
+    endless pythonian things i could do on top to create amazing images.
+
+    Learned: Writing a raytracer in C or Cuda instead of python is **not** premature optimization.
+    The python raytracer is so terribly slow that i actually did not fix the immediate bugs and just stopped.
+
+cthulhu2d:
+  short_desc: |
+    toying with another game idea and the pymunk physics framework
+  long_desc: ''
+
+pypickpack:
+  short_desc: |
+    In an amazon fulfillment center near you the job application turns out to be against a bunch of newly designed super-efficient robots!
+  long_desc: ''
+
+trends-competition:
+  short_desc: |
+    Yet another TReNDS Neuroimaging competition sourcecode
+  long_desc: ''
+
+parking-data:
+  short_desc: |
+    historic archive of free parking places across germany
+  long_desc: ''
+
+parking-scraper:
+  short_desc: |
+    collection of scrapers to get parking space occupancy data across germany
+  long_desc: ''
+
+pickpack:
+  short_desc: |
+    react game in progress
+  long_desc: ''
+
+shadertoz:
+  short_desc: |
+    momentarily a django using the shadertoy public api
+  long_desc: ''
+
+pyvolution:
+  short_desc: |
+    evolutionary python framework
+  long_desc: ''
+
+processflow:
+  short_desc: |
+    Define a flow, fill with meaning and then run parallel and persistant jobs.
+  long_desc: ''
+
+django-joblog:
+  short_desc: |
+    A generic django-utility that helps to log stuff to the database.
+  long_desc: ''
+
+django-clear-tables:
+  short_desc: |
+    django manage.py task that clears the content of the django Permission and ContentTypes tables
+  long_desc: ''
+
+lovebot:
+  short_desc: |
+    Botlove python server and client + webclient
+  long_desc: ''
+
+logmonitor:
+  short_desc: |
+    Web-view for system logs
+  long_desc: ''
+
+brain-discord:
+  short_desc: |
+    Yet another discord bot
+  long_desc: ''
+
+musicpatterns:
+  short_desc: |
+    "Musical" pattern generation in python
+  long_desc: ''
+
+bm-wahl-18-jena:
+  short_desc: |
+    Oberbürgermeisterwahl Jena/Thüringen 2018 - Datenbeschaffung und Analyse
+  long_desc: ''
+
+thegame:
+  short_desc: |
+    testbed for python based pixel adventure
+  long_desc: ''
+
+agenda90210-blog:
+  short_desc: |
+    external data for agenda90210 blog
+  long_desc: ''
+
+boto:
+  short_desc: |
+    For the latest version of boto, see https://github.com/boto/boto3 -- Python interface to Amazon Web Services
+  long_desc: ''
+
+wikistats:
+  short_desc: |
+    just fascinated by wikimedia's pageviews data, doing some correlations
+  long_desc: ''
+
+shadertox:
+  short_desc: |
+    Shader in da Browser via da Django
+  long_desc: ''
+
+fritztrack:
+  short_desc: |
+    Owning the Fritz!Box with Django
+  long_desc: ''
+
+wahl17:
+  short_desc: |
+    Bundestagswahl 2017 Wahlergebnisse
+  long_desc: ''
+
+github-nodes:
+  short_desc: |
+    Visualizing connections between github users and repos (python+js)
+  long_desc: ''
+
+afd-chat:
+  short_desc: |
+    afd party's social media leak as a service
+  long_desc: ''
+
+neurotools:
+  short_desc: |
+    small collection of brainimaging helper scripts in python
+  long_desc: ''
+
+lolpig:
+  short_desc: |
+    LOw-Level Python Interface Generator
+  long_desc: ''
+
+cppy:
+  short_desc: |
+    python to cpp converter - the hard way
+  long_desc: ''
+
+pector:
+  short_desc: |
+    simple python vector/matrix lib with focus on geomety
+  long_desc: ''
+
+QShadertoy:
+  short_desc: |
+    Off-line Shadertoy renderer using web-API 
+  long_desc: ''
+
+Syntak:
+  short_desc: |
+    Generative parser with runtime syntax definition
+  long_desc: ''
+
+sonot:
+  short_desc: |
+    Spanish Organ Tablature Notation
+  long_desc: ''
+
+csmod040:
+  short_desc: |
+    CS Modular Editor
+  long_desc: ''
+
+beat-detect:
+  short_desc: |
+    Attempt to refacture Rob Harper's beat-detect code into a useable cross-platform library
+  long_desc: ''
+
+solstice:
+  short_desc: |
+    "Solstice 2016" happening interface
+  long_desc: ''
+
+neurost:
+  short_desc: |
+    Neuronal ShaderToy Framework
+  long_desc: ''
+
+mnn:
+  short_desc: |
+    modular neuronal network lib 
+  long_desc: ''
+
+brainf:
+  short_desc: |
+    Brainfuck interpreter and evolutionary framework
+  long_desc: ''
+
+sociopyth:
+  short_desc: |
+    collection of scripts to download stuff from the web
+  long_desc: ''
+
+kaliset:
+  short_desc: |
+    kaliset explorer
+  long_desc: ''
+
+scheeder:
+  short_desc: |
+    OpenGL / GLSL in Qt Project as demonstration for student classes
+  long_desc: ''
+
+ttt:
+  short_desc: |
+    TicTacToe With Capturing - engine
+  long_desc: ''
+
+csmod2:
+  short_desc: |
+    CymaSonics Modular II - A modular audio/video framework in Qt
+  long_desc: ''
+
+cudagol:
+  short_desc: |
+    Game Of Life implemented in Cuda
+  long_desc: ''
+
+rsom:
+  short_desc: |
+    A tool for Self-Organizing Maps from audio data for use with NI Reaktor
+  long_desc: ''
+

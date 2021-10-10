@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="repo-list">
+    <div class="inside">
+    {% for repo in repo_list %}
+        {% if repo.year %}
+            </div>
+            <div class="year">{{repo.year}}</div>
+            <div class="inside">
+        {% endif %}
+        <div class="repo" id="{{repo.name}}">
+            <div class="name"><a href="{{repo.url}}">{{repo.name}}</a></div>
+            <div class="language">{{repo.language}}</div>
+            <div class="date">{{repo.date_created}}</div>
+            <div class="inside">
+                <div class="description short">{{repo.short_description}}</div>
+                {% if repo.long_description %}
+                    <div class="description long">{{repo.long_description}}</div>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}
