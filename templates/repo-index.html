@@ -20,9 +20,11 @@
             <div class="inside">
         {% endif %}
         <div class="repo" id="{{repo.name}}">
-            <div class="name"><a href="{{repo.url}}">{{repo.name}}</a></div>
+            <div class="flex-row">
+                <div class="name grow"><a href="{{repo.url}}">{{repo.name}}</a></div>
+                <div class="date">{{repo.dates}}</div>
+            </div>
             <div class="language">{{repo.language}}</div>
-            <div class="date">{{repo.date_created}}</div>
             <div class="inside">
                 <div class="description short">{{repo.short_description}}</div>
                 {% if repo.long_description %}

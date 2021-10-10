@@ -4,9 +4,11 @@ import json
 from pathlib import Path
 from cache import Cache
 import glob
+
 import yaml
-from jinja2 import Template, Environment, FileSystemLoader
 import markdown
+import scss
+from jinja2 import Template, Environment, FileSystemLoader
 
 PROJECT_PATH = Path(__file__).resolve().parent.parent
 TEMPLATE_PATH = PROJECT_PATH / "templates"
@@ -90,12 +92,23 @@ def render_index():
     for repo in repo_list:
         year = repo["created_at"][:4]
 
+        date_first = repo_dates[repo["name"]][0][:10]
+        date_last = repo_dates[repo["name"]][-1][:10]
+
+        if date_first == date_last:
+            date_str = date_first
+        elif (datetime.date.today() - datetime.datetime.strptime(date_last, "%Y-%m-%d").date()).days < 30:
+            date_str = f"{date_first} until now"
+        else:
+            date_str = f"{date_first} until {date_last}"
+
         row = {
             "name": repo["name"],
             "language": repo["language"],
-            "date_created": repo_dates[repo["name"]][0][:10],
+            "dates": date_str,
+            #"date_updated": repo_dates[repo["name"]][0][:10],
             #"date_created": repo["created_at"][:10],
-            "date_updated": repo["updated_at"][:10],
+            #"date_updated": repo["updated_at"][:10],
             "short_description": repo_descs[repo["name"]]["short_desc"].strip(),
             "long_description": repo_descs[repo["name"]]["long_desc"].strip() or None,
             "url": repo["html_url"],
@@ -119,7 +132,14 @@ def render_index():
     (OUTPUT_PATH / "index.html").write_text(markup)
 
 
+def render_style():
+    c = scss.Compiler(output_style="compressed")
+    src = c.compile(str(TEMPLATE_PATH / "style.scss"))
+    (OUTPUT_PATH / "style.css").write_text(src)
+
+
 if __name__ == "__main__":
     # update_repo_yaml()  # CAREFUL! This overwrites the existing yaml
     #render_index()
-    print(get_repo_dates())
+    render_style()
+    #print(get_repo_dates())

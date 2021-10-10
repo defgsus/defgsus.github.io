@@ -1,3 +1,9 @@
+defgsus:
+  short_desc: |
+    The index
+  long_desc: |
+    You are currently viewing it's [*github pages*](https://guides.github.com/features/pages/)!
+
 wurst:
   short_desc: |
     **w**eb-**u**tilized **r**eact **s**ynthesizer **t**est
