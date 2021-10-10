@@ -1,10 +1,12 @@
 defgsus:
+  categories: doc
   short_desc: |
     The index
   long_desc: |
     You are currently viewing it's [*github pages*](https://guides.github.com/features/pages/)!
 
 wurst:
+  categories: audio
   short_desc: |
     **w**eb-**u**tilized **r**eact **s**ynthesizer **t**est
   long_desc: |
@@ -19,17 +21,20 @@ wurst:
     functions.
 
 office-schedule-data:
+  categories: data
   short_desc: |
     historic snapshots of free office appointment dates
   long_desc: |
     The data output of [office-schedule-scraper](#office-schedule-scraper).
 
 kindergarten-times:
+  categories: data
   short_desc: |
     historic timeline of arrival at kindergarten
   long_desc: ''
 
 office-schedule-scraper:
+  categories: data
   short_desc: |
     Scraper for (german) free dates at the public offices
   long_desc: |
@@ -40,6 +45,7 @@ office-schedule-scraper:
     exactly why i do it.
 
 clipig:
+  categories: visual
   short_desc: |
     [OpenAI](https://openai.com)'s [CLIP](https://github.com/openai/CLIP)
     based image generator with complex config file controlled transformation and training pipelines
@@ -52,6 +58,7 @@ clipig:
     and [some experimental results](https://defgsus.github.io/blog/2021/06/09/clipig-animal-transfer.html).
 
 image-scraper:
+  categories: visual ai
   short_desc: |
     Some basic image scraper with django as orm and server
   long_desc: |
@@ -60,6 +67,7 @@ image-scraper:
     natural language and reference images.
 
 blog:
+  categories: blog audio visual ai net
   short_desc: |
     Repo of my blog
   long_desc: |
@@ -68,6 +76,7 @@ blog:
     as the basis for static site generation.
 
 ufa:
+  categories: net
   short_desc: |
     **Überwachung für Alle** - self-surveillance browser add-on
   long_desc: |
@@ -80,6 +89,7 @@ ufa:
     Oh, and [uBlock Origin](https://ublockorigin.com/), of course.
 
 symmetrical-disco:
+  categories: visual
   short_desc: |
     ray-tracer entirely in python
   long_desc: |
@@ -90,226 +100,267 @@ symmetrical-disco:
     The python raytracer is so terribly slow that i actually did not fix the immediate bugs and just stopped.
 
 cthulhu2d:
+  categories: game
   short_desc: |
     toying with another game idea and the pymunk physics framework
   long_desc: ''
 
 pypickpack:
+  categories: game
   short_desc: |
     In an amazon fulfillment center near you the job application turns out to be against a bunch of newly designed super-efficient robots!
   long_desc: ''
 
 trends-competition:
+  categories: ai
   short_desc: |
     Yet another TReNDS Neuroimaging competition sourcecode
   long_desc: ''
 
 parking-data:
+  categories: data
   short_desc: |
     historic archive of free parking places across germany
   long_desc: ''
 
 parking-scraper:
+  categories: data
   short_desc: |
     collection of scrapers to get parking space occupancy data across germany
   long_desc: ''
 
 pickpack:
+  categories: game
   short_desc: |
     react game in progress
   long_desc: ''
 
 shadertoz:
+  categories: visual data
   short_desc: |
     momentarily a django using the shadertoy public api
   long_desc: ''
 
 pyvolution:
+  categories: lib
   short_desc: |
     evolutionary python framework
   long_desc: ''
 
 processflow:
+  categories: lib
   short_desc: |
     Define a flow, fill with meaning and then run parallel and persistant jobs.
   long_desc: ''
 
 django-joblog:
+  categories: lib
   short_desc: |
     A generic django-utility that helps to log stuff to the database.
   long_desc: ''
 
 django-clear-tables:
+  categories: lib
   short_desc: |
     django manage.py task that clears the content of the django Permission and ContentTypes tables
   long_desc: ''
 
 lovebot:
+  categories: game
   short_desc: |
     Botlove python server and client + webclient
   long_desc: ''
 
 logmonitor:
+  categories: net
   short_desc: |
     Web-view for system logs
   long_desc: ''
 
 brain-discord:
+  categories: net
   short_desc: |
     Yet another discord bot
   long_desc: ''
 
 musicpatterns:
+  categories: audio
   short_desc: |
     "Musical" pattern generation in python
   long_desc: ''
 
 bm-wahl-18-jena:
+  categories: data
   short_desc: |
     Oberbürgermeisterwahl Jena/Thüringen 2018 - Datenbeschaffung und Analyse
   long_desc: ''
 
 thegame:
+  categories: game
   short_desc: |
     testbed for python based pixel adventure
   long_desc: ''
 
 agenda90210-blog:
+  categories: blog
+  language: data
+
   short_desc: |
     external data for agenda90210 blog
   long_desc: ''
 
-boto:
-  short_desc: |
-    For the latest version of boto, see https://github.com/boto/boto3 -- Python interface to Amazon Web Services
-  long_desc: ''
-
 wikistats:
+  categories: data
   short_desc: |
     just fascinated by wikimedia's pageviews data, doing some correlations
   long_desc: ''
 
 shadertox:
+  categories: visual net
   short_desc: |
     Shader in da Browser via da Django
   long_desc: ''
 
 fritztrack:
+  categories: net
   short_desc: |
     Owning the Fritz!Box with Django
   long_desc: ''
 
 wahl17:
+  categories: data
   short_desc: |
     Bundestagswahl 2017 Wahlergebnisse
   long_desc: ''
 
 github-nodes:
+  categories: data
   short_desc: |
     Visualizing connections between github users and repos (python+js)
   long_desc: ''
 
 afd-chat:
+  categories: data
   short_desc: |
     afd party's social media leak as a service
   long_desc: ''
 
 neurotools:
+  categories: lib
   short_desc: |
     small collection of brainimaging helper scripts in python
   long_desc: ''
 
 lolpig:
+  categories: lib compiler
   short_desc: |
     LOw-Level Python Interface Generator
   long_desc: ''
 
 cppy:
+  categories: lib compiler
   short_desc: |
     python to cpp converter - the hard way
   long_desc: ''
 
 pector:
+  categories: lib
   short_desc: |
     simple python vector/matrix lib with focus on geomety
   long_desc: ''
 
 QShadertoy:
+  categories: visual
   short_desc: |
     Off-line Shadertoy renderer using web-API 
   long_desc: ''
 
 Syntak:
+  categories: lib compiler
   short_desc: |
     Generative parser with runtime syntax definition
   long_desc: ''
 
 sonot:
+  categories: audio
   short_desc: |
     Spanish Organ Tablature Notation
   long_desc: ''
 
 csmod040:
+  categories: audio visual
   short_desc: |
     CS Modular Editor
   long_desc: ''
 
 beat-detect:
+  categories: lib
   short_desc: |
     Attempt to refacture Rob Harper's beat-detect code into a useable cross-platform library
   long_desc: ''
 
 solstice:
+  categories: visual
   short_desc: |
     "Solstice 2016" happening interface
   long_desc: ''
 
 neurost:
+  categories: ai glsl
   short_desc: |
     Neuronal ShaderToy Framework
   long_desc: ''
 
 mnn:
+  categories: lib ai
   short_desc: |
     modular neuronal network lib 
   long_desc: ''
 
 brainf:
+  categories: lib compiler
   short_desc: |
     Brainfuck interpreter and evolutionary framework
   long_desc: ''
 
 sociopyth:
+  categories: data
   short_desc: |
     collection of scripts to download stuff from the web
   long_desc: ''
 
 kaliset:
+  categories: visual fractal
   short_desc: |
     kaliset explorer
   long_desc: ''
 
 scheeder:
+  categories: visual lib
   short_desc: |
     OpenGL / GLSL in Qt Project as demonstration for student classes
   long_desc: ''
 
 ttt:
+  categories: game ai
   short_desc: |
     TicTacToe With Capturing - engine
   long_desc: ''
 
 csmod2:
+  categories: audio visual
   short_desc: |
     CymaSonics Modular II - A modular audio/video framework in Qt
   long_desc: ''
 
 cudagol:
+  categories: game ai
   short_desc: |
     Game Of Life implemented in Cuda
   long_desc: ''
 
 rsom:
+  categories: lib audio
   short_desc: |
     A tool for Self-Organizing Maps from audio data for use with NI Reaktor
   long_desc: ''

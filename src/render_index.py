@@ -14,6 +14,15 @@ PROJECT_PATH = Path(__file__).resolve().parent.parent
 TEMPLATE_PATH = PROJECT_PATH / "templates"
 OUTPUT_PATH = PROJECT_PATH / "docs"
 
+LANGUAGE_MAPPING = {
+    "Python": "python",
+    "C++": "cpp",
+    "Jupyter Notebook": "jupyter",
+    "HTML": "html",
+    "JavaScript": "js",
+    "GLSL": "glsl",
+}
+
 
 def get_repo_list():
     repo_list = Cache.load("repo_list")
@@ -24,11 +33,11 @@ def get_repo_list():
     )
 
 
-def get_repo_descs():
+def get_repo_infos():
     data = yaml.safe_load((TEMPLATE_PATH / "repo-descriptions.yaml").read_text())
     data = {
         key: {
-            key2: markdown.markdown(value2)
+            key2: markdown.markdown(value2) if "desc" in key2 else value2
             for key2, value2 in value.items()
         }
         for key, value in data.items()
@@ -84,48 +93,53 @@ def render_index():
     env = get_template_env()
     template = env.get_template("repo-index.html")
     repo_list = get_repo_list()
-    repo_descs = get_repo_descs()
+    repo_infos = get_repo_infos()
     repo_dates = get_repo_dates()
-    render_rows = []
+    tag_images = set(n.split("/")[-1][:-4] for n in glob.glob(str(OUTPUT_PATH / "img" / "tags" / "*.png")))
 
-    last_year = None
+    repos_by_year = {}
     for repo in repo_list:
-        year = repo["created_at"][:4]
+        try:
+            year = repo["created_at"][:4]
 
-        date_first = repo_dates[repo["name"]][0][:10]
-        date_last = repo_dates[repo["name"]][-1][:10]
+            date_first = repo_dates[repo["name"]][0][:10]
+            date_last = repo_dates[repo["name"]][-1][:10]
 
-        if date_first == date_last:
-            date_str = date_first
-        elif (datetime.date.today() - datetime.datetime.strptime(date_last, "%Y-%m-%d").date()).days < 30:
-            date_str = f"{date_first} until now"
-        else:
-            date_str = f"{date_first} until {date_last}"
+            if date_first == date_last:
+                date_str = date_first
+            elif (datetime.date.today() - datetime.datetime.strptime(date_last, "%Y-%m-%d").date()).days < 30:
+                date_str = f"{date_first} to now"
+            else:
+                if date_first[:4] == date_last[:4]:
+                    date_last = date_last[5:]
+                date_str = f"{date_first} to {date_last}"
 
-        row = {
-            "name": repo["name"],
-            "language": repo["language"],
-            "dates": date_str,
-            #"date_updated": repo_dates[repo["name"]][0][:10],
-            #"date_created": repo["created_at"][:10],
-            #"date_updated": repo["updated_at"][:10],
-            "short_description": repo_descs[repo["name"]]["short_desc"].strip(),
-            "long_description": repo_descs[repo["name"]]["long_desc"].strip() or None,
-            "url": repo["html_url"],
-        }
+            repo_info = repo_infos[repo["name"]]
 
-        if year != last_year:
-            row["year"] = year
-        last_year = year
+            tags = sorted(repo_info["categories"].split())
 
-        render_rows.append(row)
+            row = {
+                "name": repo["name"],
+                "language": repo_info.get("language") or LANGUAGE_MAPPING[repo["language"]],
+                "tags": tags,
+                "dates": date_str.replace("-", "/"),
+                "short_description": repo_info["short_desc"].strip(),
+                "long_description": repo_info["long_desc"].strip() or None,
+                "url": repo["html_url"],
+            }
+
+            repos_by_year.setdefault(year, []).append(row)
+
+        except:
+            print("IN REPO", repo["name"])
+            raise
 
     markup = template.render(**{
         "meta": {
             "title": "Index Repium",
             "description": "Index of repos on github, by good ol' def.gsus-",
         },
-        "repo_list": render_rows,
+        "repos_by_year": repos_by_year,
     })
 
     os.makedirs(OUTPUT_PATH, exist_ok=True)
@@ -140,6 +154,5 @@ def render_style():
 
 if __name__ == "__main__":
     # update_repo_yaml()  # CAREFUL! This overwrites the existing yaml
-    #render_index()
+    render_index()
     render_style()
-    #print(get_repo_dates())

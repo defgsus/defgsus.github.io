@@ -9,6 +9,10 @@ body {
     .grow {
         flex-grow: 100;
     }
+
+    .margin-right {
+        margin-right: .5rem;
+    }
 }
 
 .wrapper {
@@ -47,8 +51,11 @@ body {
         color: #790a0a;
     }
 
-    .year {
-        font-size: 1.333rem;
+    .year-block {
+        .year {
+            font-size: 1.333rem;
+            margin-bottom: 1rem;
+        }
         margin-bottom: 1rem;
     }
 
@@ -61,18 +68,33 @@ body {
         }
     }
 
+    .language {
+        width: 1rem;
+        margin-right: .2rem;
+    }
+
     .name {
         font-size: 1rem;
         display: inline-block;
     }
 
-    .language, .date {
+    .date {
         display: inline-block;
         font-size: .5rem;
+        margin-top: auto;
+        color: #573d0b;
     }
 
-    .date {
-        margin-top: auto;
+    .tags {
+        display: flex;
+        .tag {
+            font-size: .5rem;
+            margin: auto .1rem;
+            padding: .1rem;
+            background: #e9dcc3;
+            border: 1px solid #bda87f;
+            border-radius: 5px;
+        }
     }
 
     .description {
