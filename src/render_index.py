@@ -27,7 +27,10 @@ LANGUAGE_MAPPING = {
 def get_repo_list():
     repo_list = Cache.load("repo_list")
     return sorted(
-        filter(lambda r: r["owner"]["login"] == "defgsus", repo_list),
+        filter(
+            lambda r: r["owner"]["login"] == "defgsus" or r["name"] in ("elastipy", "shatrabase"),
+            repo_list,
+        ),
         key=lambda r: r["created_at"],
         reverse=True,
     )
@@ -100,6 +103,12 @@ def render_index():
     repos_by_year = {}
     for repo in repo_list:
         try:
+            repo_info = repo_infos[repo["name"]]
+        except KeyError:
+            print(json.dumps(repo, indent=2))
+            raise KeyError(f'missing info for {repo["name"]}')
+
+        try:
             year = repo["created_at"][:4]
 
             date_first = repo_dates[repo["name"]][0][:10]
@@ -113,8 +122,6 @@ def render_index():
                 if date_first[:4] == date_last[:4]:
                     date_last = date_last[5:]
                 date_str = f"{date_first} to {date_last}"
-
-            repo_info = repo_infos[repo["name"]]
 
             tags = sorted(repo_info["categories"].split())
 

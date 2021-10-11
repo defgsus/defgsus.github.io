@@ -27,6 +27,10 @@ wurst:
     [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer) and all these magic
     functions.
 
+    As to be expected, the timing of `setTimeout` driving the react dispatchers is not good
+    enough to drive an audio machine correctly (where 20 milliseconds off are already
+    perceived as *not in the beat*). It's fun though!
+
 office-schedule-data:
   categories: data
   short_desc: |
@@ -74,7 +78,7 @@ image-scraper:
     natural language and reference images.
 
 blog:
-  categories: blog audio visual ai net
+  categories: blog audio visual ai web
   short_desc: |
     Repo of my blog
   long_desc: |
@@ -83,7 +87,7 @@ blog:
     as the basis for static site generation.
 
 ufa:
-  categories: net
+  categories: web
   short_desc: |
     **Überwachung für Alle** - self-surveillance browser add-on
   long_desc: |
@@ -94,6 +98,24 @@ ufa:
     ([MDN](https://developer.mozilla.org/en-US/Add-ons/WebExtensions), [Chrome](https://developer.chrome.com/docs/extensions/reference/))
     which is so powerful that i **do not trust any extension** except my own ones.
     Oh, and [uBlock Origin](https://ublockorigin.com/), of course.
+
+elastipy:
+  categories: lib
+  short_desc: |
+    python elasticsearch query module for easily accessing nested aggregations and such
+  long_desc: |
+    This is a library for [Elasticsearch](https://www.elastic.co/elasticsearch/) queries. They
+    provide [their own](https://github.com/elastic/elasticsearch-dsl-py) library for that
+    but it does not help with either generating the right query or accessing the results in
+    a sane manner. Elastipy has a fully typed interface and tries to be smart with aggregation
+    responses, converting them into simplified `dict`s or
+    [pandas DataFrames](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html).
+
+    Learned: Generating documentation and examples from jupyter notebooks. And that the whole
+    documentation system in python is good only on the surface.
+    Actually it's painful, not well documented and time consuming.
+    No surprise, why all the major libs have their own documentation infrastructure
+    (hacked [Sphinxes](https://www.sphinx-doc.org/)).
 
 symmetrical-disco:
   categories: visual
@@ -162,6 +184,7 @@ parking-data:
 
 parking-scraper:
   categories: data
+  language: python  # not jupyter
   short_desc: |
     collection of scrapers to get parking space occupancy data across germany
   long_desc: |
@@ -224,16 +247,20 @@ lovebot:
   long_desc: ''
 
 logmonitor:
-  categories: net
+  categories: web
   short_desc: |
     Web-view for system logs
   long_desc: ''
 
 brain-discord:
-  categories: net
+  categories: web
   short_desc: |
-    Yet another discord bot
-  long_desc: ''
+    Yet another [discord](https://discord.com/) bot
+  long_desc: |
+    There was a time, when we used discord for work meetings. This little bot joined. It would
+    post *Live of Brian* or *Bladerunner* citations with the person names replaced by the names of the chat members.
+    It could display tickets from [YouTrack](https://www.jetbrains.com/youtrack/). And it would
+    engage in a german [Eliza](https://en.wikipedia.org/wiki/ELIZA) therapy chat.
 
 musicpatterns:
   categories: audio
@@ -251,15 +278,25 @@ thegame:
   categories: game
   short_desc: |
     testbed for python based pixel adventure
-  long_desc: ''
+  long_desc: |
+    OpenGL rendering graph and [A* search](https://en.wikipedia.org/wiki/A*_search_algorithm) movement.
+
+    The rendering is particularily nice, optically. It uses *sphere tracing* through a pre-generated
+    3D distance field for the soft-shadows.
+
+    Also started an editor in [PyQt](https://github.com/pyqt/). Learned: Programming Qt in python
+    is almost fun, compared to C++.
 
 agenda90210-blog:
   categories: blog
   language: data
-
   short_desc: |
-    external data for agenda90210 blog
-  long_desc: ''
+    external data for [agenda90210 blog](https://agenda90210.blogspot.com/)
+  long_desc: |
+    At the time i simply found it amazing that one can freely post javascript on blogspot.com.
+    So i published a few data-mining articles. When the data became too much for one post
+    (the posting interface would not work anymore) i moved it to this repo and requested
+    it externally.
 
 wikistats:
   categories: data
@@ -268,13 +305,13 @@ wikistats:
   long_desc: ''
 
 shadertox:
-  categories: visual net
+  categories: visual web
   short_desc: |
     Shader in da Browser via da Django
   long_desc: ''
 
 fritztrack:
-  categories: net
+  categories: web
   short_desc: |
     Owning the Fritz!Box with Django
   long_desc: ''
@@ -385,13 +422,37 @@ kaliset:
   categories: visual fractal
   short_desc: |
     kaliset explorer
-  long_desc: ''
+  long_desc: |
+    There is this user called **Kali** who
+    [posted on fractal forums](https://www.fractalforums.com/new-theories-and-research/very-simple-formula-for-fractal-patterns/)
+    this amazing formula. It got very popular on [Shadertoy](https://www.shadertoy.com/results?query=kaliset).
+    And i used it [fulldome](https://vimeo.com/126536758) once in a while.
+
+    This is a C++ implementation.
 
 scheeder:
   categories: visual lib
   short_desc: |
     OpenGL / GLSL in Qt Project as demonstration for student classes
-  long_desc: ''
+  long_desc: |
+    Well, it was just one class where a [friend](https://soundcloud.com/a_s_tarantoga) was teaching at the time.
+
+shatrabase:
+  categories: game ai
+  short_desc: |
+    database and engine host for the Altai game Shatra, derived from ChessX
+  long_desc: |
+    A project with [Francis Monkman](http://afkm.com/). Through friends in Russia he got into
+    contact with this game called Shatra. It's the mongolian version of a checkers-like game.
+    Some russian suggested to use chess figures which makes it a kind of turbo-checker-chess.
+
+    It's a cool game and Francis has been working for decades on efficient
+    [alpha-beta pruning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning) for this
+    particular rule set.
+
+    We forked [ChessX](https://chessx.sourceforge.io/) which is a Qt/C++ project, mainly
+    for archiving and studying chess games, and extended it to both Shatra versions and
+    added a play mode.
 
 ttt:
   categories: game ai

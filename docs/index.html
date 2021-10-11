@@ -12,13 +12,26 @@
 
 <main class="page-content">
     <div class="wrapper">
+        <div class="nav">
+            <div class="nav-item"><a href="https://github.com/defgsus">github</a></div>
+            <div class="nav-item"><a href="https://defgsus.github.io/blog/">blog</a></div>
+            <div class="nav-item"><a href="https://www.shadertoy.com/user/bergi">shadertoy</a></div>
+            <div class="nav-item"><a href="https://vimeo.com/defgsus">vimeo</a></div>
+            <div class="nav-item"><a href="https://www.youtube.com/user/bundesgesundheitsmin">youtube</a></div>
+            <div class="nav-item"><a href="https://cymatrix.org/project.html">cymatrix</a></div>
+            <div class="nav-item"><a href="https://www.fddb.org/organizations/ten-art-communications/">fddb</a></div>
+        </div>
+
         
 
 <div class="header">
     <div class="title">def.gsus- repos</div>
-    <a href="http://subgenius.com/">
-        <div class="bob-image"><img src="img/bob.png"></div>
-    </a>
+
+    <div class="bob-image">
+        <a href="http://subgenius.com/">
+            <img src="img/bob.png">
+        </a>
+    </div>
 </div>
 
 
@@ -85,7 +98,10 @@ As it turns out, this API provides an interface that is exactly for building syn
 of the step-sequencers. Did not want to use <a href="https://redux.js.org/">redux</a> this time and learned about
 <a href="https://reactjs.org/docs/hooks-reference.html">React Hooks</a> and especially
 <a href="https://reactjs.org/docs/hooks-reference.html#usereducer">useReducer</a> and all these magic
-functions.</p></div>
+functions.</p>
+<p>As to be expected, the timing of <code>setTimeout</code> driving the react dispatchers is not good
+enough to drive an audio machine correctly (where 20 milliseconds off are already
+perceived as <em>not in the beat</em>). It's fun though!</p></div>
                         
                     </div>
                 </div>
@@ -207,9 +223,9 @@ natural language and reference images.</p></div>
                             
                                 <div class="tag">blog</div>
                             
-                                <div class="tag">net</div>
-                            
                                 <div class="tag">visual</div>
+                            
+                                <div class="tag">web</div>
                             
                         </div>
                         <div class="date">2021/02/26 to 09/09</div>
@@ -230,7 +246,7 @@ as the basis for static site generation.</p></div>
                         <div class="name margin-right"><a href="https://github.com/defgsus/ufa">ufa</a></div>
                         <div class="tags grow">
                             
-                                <div class="tag">net</div>
+                                <div class="tag">web</div>
                             
                         </div>
                         <div class="date">2021/02/21 to 02/25</div>
@@ -275,6 +291,35 @@ The python raytracer is so terribly slow that i actually did not fix the immedia
         <div class="year-block">
             <div class="year">2020</div>
             <div class="inside">
+            
+                <div class="repo" id="elastipy">
+                    <div class="flex-row">
+                        <img class="language" src="img/tags/python.png" title="python">
+                        <div class="name margin-right"><a href="https://github.com/netzkolchose/elastipy">elastipy</a></div>
+                        <div class="tags grow">
+                            
+                                <div class="tag">lib</div>
+                            
+                        </div>
+                        <div class="date">2020/12/23 to 2021/04/06</div>
+                    </div>
+                    <div class="inside">
+                        <div class="description short"><p>python elasticsearch query module for easily accessing nested aggregations and such</p></div>
+                        
+                            <div class="description long"><p>This is a library for <a href="https://www.elastic.co/elasticsearch/">Elasticsearch</a> queries. They
+provide <a href="https://github.com/elastic/elasticsearch-dsl-py">their own</a> library for that
+but it does not help with either generating the right query or accessing the results in
+a sane manner. Elastipy has a fully typed interface and tries to be smart with aggregation
+responses, converting them into simplified <code>dict</code>s or
+<a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html">pandas DataFrames</a>.</p>
+<p>Learned: Generating documentation and examples from jupyter notebooks. And that the whole
+documentation system in python is good only on the surface.
+Actually it's painful, not well documented and time consuming.
+No surprise, why all the major libs have their own documentation infrastructure
+(hacked <a href="https://www.sphinx-doc.org/">Sphinxes</a>).</p></div>
+                        
+                    </div>
+                </div>
             
                 <div class="repo" id="cthulhu2d">
                     <div class="flex-row">
@@ -375,7 +420,7 @@ on a fraction of the data.</p></div>
             
                 <div class="repo" id="parking-scraper">
                     <div class="flex-row">
-                        <img class="language" src="img/tags/jupyter.png" title="jupyter">
+                        <img class="language" src="img/tags/python.png" title="python">
                         <div class="name margin-right"><a href="https://github.com/defgsus/parking-scraper">parking-scraper</a></div>
                         <div class="tags grow">
                             
@@ -549,7 +594,7 @@ long and complicated formulas.</p></div>
                         <div class="name margin-right"><a href="https://github.com/defgsus/logmonitor">logmonitor</a></div>
                         <div class="tags grow">
                             
-                                <div class="tag">net</div>
+                                <div class="tag">web</div>
                             
                         </div>
                         <div class="date">2018/06/18 to 06/26</div>
@@ -566,13 +611,18 @@ long and complicated formulas.</p></div>
                         <div class="name margin-right"><a href="https://github.com/defgsus/brain-discord">brain-discord</a></div>
                         <div class="tags grow">
                             
-                                <div class="tag">net</div>
+                                <div class="tag">web</div>
                             
                         </div>
                         <div class="date">2018/06/15 to 07/30</div>
                     </div>
                     <div class="inside">
-                        <div class="description short"><p>Yet another discord bot</p></div>
+                        <div class="description short"><p>Yet another <a href="https://discord.com/">discord</a> bot</p></div>
+                        
+                            <div class="description long"><p>There was a time, when we used discord for work meetings. This little bot joined. It would
+post <em>Live of Brian</em> or <em>Bladerunner</em> citations with the person names replaced by the names of the chat members.
+It could display tickets from <a href="https://www.jetbrains.com/youtrack/">YouTrack</a>. And it would
+engage in a german <a href="https://en.wikipedia.org/wiki/ELIZA">Eliza</a> therapy chat.</p></div>
                         
                     </div>
                 </div>
@@ -625,6 +675,12 @@ long and complicated formulas.</p></div>
                     <div class="inside">
                         <div class="description short"><p>testbed for python based pixel adventure</p></div>
                         
+                            <div class="description long"><p>OpenGL rendering graph and <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* search</a> movement.</p>
+<p>The rendering is particularily nice, optically. It uses <em>sphere tracing</em> through a pre-generated
+3D distance field for the soft-shadows.</p>
+<p>Also started an editor in <a href="https://github.com/pyqt/">PyQt</a>. Learned: Programming Qt in python
+is almost fun, compared to C++.</p></div>
+                        
                     </div>
                 </div>
             
@@ -640,7 +696,12 @@ long and complicated formulas.</p></div>
                         <div class="date">2018/02/06 to 03/09</div>
                     </div>
                     <div class="inside">
-                        <div class="description short"><p>external data for agenda90210 blog</p></div>
+                        <div class="description short"><p>external data for <a href="https://agenda90210.blogspot.com/">agenda90210 blog</a></p></div>
+                        
+                            <div class="description long"><p>At the time i simply found it amazing that one can freely post javascript on blogspot.com.
+So i published a few data-mining articles. When the data became too much for one post
+(the posting interface would not work anymore) i moved it to this repo and requested
+it externally.</p></div>
                         
                     </div>
                 </div>
@@ -674,9 +735,9 @@ long and complicated formulas.</p></div>
                         <div class="name margin-right"><a href="https://github.com/defgsus/shadertox">shadertox</a></div>
                         <div class="tags grow">
                             
-                                <div class="tag">net</div>
-                            
                                 <div class="tag">visual</div>
+                            
+                                <div class="tag">web</div>
                             
                         </div>
                         <div class="date">2017/12/08 to 12/11</div>
@@ -693,7 +754,7 @@ long and complicated formulas.</p></div>
                         <div class="name margin-right"><a href="https://github.com/defgsus/fritztrack">fritztrack</a></div>
                         <div class="tags grow">
                             
-                                <div class="tag">net</div>
+                                <div class="tag">web</div>
                             
                         </div>
                         <div class="date">2017/11/28 to 12/14</div>
@@ -1035,6 +1096,12 @@ long and complicated formulas.</p></div>
                     <div class="inside">
                         <div class="description short"><p>kaliset explorer</p></div>
                         
+                            <div class="description long"><p>There is this user called <strong>Kali</strong> who
+<a href="https://www.fractalforums.com/new-theories-and-research/very-simple-formula-for-fractal-patterns/">posted on fractal forums</a>
+this amazing formula. It got very popular on <a href="https://www.shadertoy.com/results?query=kaliset">Shadertoy</a>.
+And i used it <a href="https://vimeo.com/126536758">fulldome</a> once in a while.</p>
+<p>This is a C++ implementation.</p></div>
+                        
                     </div>
                 </div>
             
@@ -1060,6 +1127,8 @@ long and complicated formulas.</p></div>
                     <div class="inside">
                         <div class="description short"><p>OpenGL / GLSL in Qt Project as demonstration for student classes</p></div>
                         
+                            <div class="description long"><p>Well, it was just one class where a <a href="https://soundcloud.com/a_s_tarantoga">friend</a> was teaching at the time.</p></div>
+                        
                     </div>
                 </div>
             
@@ -1078,6 +1147,35 @@ long and complicated formulas.</p></div>
                     </div>
                     <div class="inside">
                         <div class="description short"><p>TicTacToe With Capturing - engine</p></div>
+                        
+                    </div>
+                </div>
+            
+                <div class="repo" id="shatrabase">
+                    <div class="flex-row">
+                        <img class="language" src="img/tags/cpp.png" title="cpp">
+                        <div class="name margin-right"><a href="https://github.com/franzm/shatrabase">shatrabase</a></div>
+                        <div class="tags grow">
+                            
+                                <div class="tag">ai</div>
+                            
+                                <div class="tag">game</div>
+                            
+                        </div>
+                        <div class="date">2014/02/20 to 2018/01/21</div>
+                    </div>
+                    <div class="inside">
+                        <div class="description short"><p>database and engine host for the Altai game Shatra, derived from ChessX</p></div>
+                        
+                            <div class="description long"><p>A project with <a href="http://afkm.com/">Francis Monkman</a>. Through friends in Russia he got into
+contact with this game called Shatra. It's the mongolian version of a checkers-like game.
+Some russian suggested to use chess figures which makes it a kind of turbo-checker-chess.</p>
+<p>It's a cool game and Francis has been working for decades on efficient
+<a href="https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning">alpha-beta pruning</a> for this
+particular rule set.</p>
+<p>We forked <a href="https://chessx.sourceforge.io/">ChessX</a> which is a Qt/C++ project, mainly
+for archiving and studying chess games, and extended it to both Shatra versions and
+added a play mode.</p></div>
                         
                     </div>
                 </div>
