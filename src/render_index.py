@@ -108,6 +108,9 @@ def render_index():
             print(json.dumps(repo, indent=2))
             raise KeyError(f'missing info for {repo["name"]}')
 
+        if repo_info.get("hide"):
+            continue
+
         try:
             year = repo["created_at"][:4]
 

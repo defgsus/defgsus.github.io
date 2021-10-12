@@ -1,19 +1,20 @@
 defgsus:
+  hide: true
   language: txt
-  categories: doc
+  categories: profile
   short_desc: |
     The profile README
   long_desc: ''
 
 defgsus.github.io:
-  categories: doc
+  categories: profile
   short_desc: |
     The index
   long_desc: |
     You are currently viewing it's [*github pages*](https://guides.github.com/features/pages/)!
 
 wurst:
-  categories: audio
+  categories: audio web
   short_desc: |
     **w**eb-**u**tilized **r**eact **s**ynthesizer **t**est
   long_desc: |
@@ -30,6 +31,7 @@ wurst:
     As to be expected, the timing of `setTimeout` driving the react dispatchers is not good
     enough to drive an audio machine correctly (where 20 milliseconds off are already
     perceived as *not in the beat*). It's fun though!
+    [Have a try](https://defgsus.github.io/blog/2021/10/12/wurst-web-synth.html)...
 
 office-schedule-data:
   categories: data
