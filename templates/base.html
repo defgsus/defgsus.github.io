@@ -6,6 +6,9 @@
     <meta name="author" content="def.gsus-">
     <meta name="description" content="{{ meta.description }}">
     <link rel="stylesheet" href="style.css">
+    {% for script in meta.scripts %}
+        <script type="text/javascript" src="{{script}}"></script>
+    {% endfor %}
     <title>{{ meta.title }}</title>
 </head>
 <body>

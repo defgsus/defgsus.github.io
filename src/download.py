@@ -1,6 +1,7 @@
 import datetime
 
 from github import Github
+from tqdm import tqdm
 
 from credentials import GITHUB_ACCESS_TOKEN
 from cache import Cache
@@ -13,7 +14,7 @@ def to_datetime(d: str) -> datetime.datetime:
 def download_repo_list():
     if not Cache.exists("repo_list"):
         api = Github(GITHUB_ACCESS_TOKEN)
-        Cache.store("repo_list", [r.raw_data for r in api.get_user().get_repos()])
+        Cache.store("repo_list", [r.raw_data for r in tqdm(api.get_user().get_repos())])
 
 
 def download_commits():

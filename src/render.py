@@ -138,16 +138,23 @@ def render_index():
                 "url": repo["html_url"],
             }
 
-            repos_by_year.setdefault(year, []).append(row)
+            year_repos, year_tags = repos_by_year.setdefault(year, ([], set()))
+            year_repos.append(row)
+            for tag in tags:
+                year_tags.add(tag)
 
         except:
             print("IN REPO", repo["name"])
             raise
 
+    for year, (repos, tags) in repos_by_year.items():
+        repos_by_year[year] = (repos, " ".join(sorted(tags)))
+
     markup = template.render(**{
         "meta": {
             "title": "Index Repium",
             "description": "Index of repos on github, by good ol' def.gsus-",
+            "scripts": ("js/repos.js", ),
         },
         "repos_by_year": repos_by_year,
     })
