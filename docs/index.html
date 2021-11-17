@@ -6,6 +6,9 @@
     <meta name="author" content="def.gsus-">
     <meta name="description" content="Index of repos on github, by good ol' def.gsus-">
     <link rel="stylesheet" href="style.css">
+    
+        <script type="text/javascript" src="js/repos.js"></script>
+    
     <title>Index Repium</title>
 </head>
 <body>
@@ -24,8 +27,11 @@
 
         
 
-<div class="header">
-    <div class="title">def.gsus- repos</div>
+<div class="header flex-row">
+    <div class="grow">
+        <div class="title">def.gsus- repos</div>
+        <div class="tag-filter"></div>
+    </div>
 
     <div class="bob-image">
         <a href="http://subgenius.com/">
@@ -34,49 +40,90 @@
     </div>
 </div>
 
-
 <div class="repo-list">
     
-        <div class="year-block">
+        <div class="year-block" data-year="year" data-tags="archive audio blog data github ml privacy visual web">
             <div class="year">2021</div>
-            <div class="inside">
-            
-                <div class="repo" id="defgsus.github.io">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/defgsus.github.io">defgsus.github.io</a></div>
-                        <div class="tags grow">
+                <div class="inside">
+                
+                    <div class="repo" id="gharchive-stats" data-tags="data github">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/gharchive-stats">gharchive-stats</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">data</div>
+                                
+                                    <div class="tag">github</div>
+                                
+                            </div>
+                            <div class="date">2021/11/10 to now</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Personal plaything to make some sense of the gharchive.org data without a google account ;)</p></div>
                             
-                                <div class="tag">profile</div>
+                                <div class="description long"><p>A collection of github repos which have been pushed to in some automatic fashion during 2018:
+<a href="https://defgsus.github.io/gharchive-stats/automatic.html">defgsus.github.io/gharchive-stats/automatic.html</a></p>
+<p>Learned: <a href="https://defgsus.github.io/blog/2021/11/12/gharchive-first-post.html">some patience</a></p></div>
                             
                         </div>
-                        <div class="date">2021/10/10</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>The index</p></div>
-                        
-                            <div class="description long"><p>You are currently viewing it's <a href="https://guides.github.com/features/pages/"><em>github pages</em></a>!</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="wurst">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/js.png" title="js">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/wurst">wurst</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">audio</div>
-                            
-                                <div class="tag">web</div>
+                
+                    <div class="repo" id="bahn-api-history" data-tags="archive data">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/bahn-api-history">bahn-api-history</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">archive</div>
+                                
+                                    <div class="tag">data</div>
+                                
+                            </div>
+                            <div class="date">2021/11/02 to now</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Historic changelog of Deutsche Bahn Open API data (stations, free parking lots and elevator status)</p></div>
                             
                         </div>
-                        <div class="date">2021/10/08 to now</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p><strong>w</strong>eb-<strong>u</strong>tilized <strong>r</strong>eact <strong>s</strong>ynthesizer <strong>t</strong>est</p></div>
-                        
-                            <div class="description long"><p>Just stumbled over the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Web Audio API</a>.
+                
+                    <div class="repo" id="defgsus.github.io" data-tags="github">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/defgsus.github.io">defgsus.github.io</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">github</div>
+                                
+                            </div>
+                            <div class="date">2021/10/10</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>The index</p></div>
+                            
+                                <div class="description long"><p>You are currently viewing it's <a href="https://guides.github.com/features/pages/"><em>github pages</em></a>!</p></div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="repo" id="wurst" data-tags="audio web">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/js.png" title="js">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/wurst">wurst</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">audio</div>
+                                
+                                    <div class="tag">web</div>
+                                
+                            </div>
+                            <div class="date">2021/10/08 to 10/09</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p><strong>w</strong>eb-<strong>u</strong>tilized <strong>r</strong>eact <strong>s</strong>ynthesizer <strong>t</strong>est</p></div>
+                            
+                                <div class="description long"><p>Just stumbled over the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Web Audio API</a>.
 Actually i wanted to see if it's possible to program an efficient synthesizer in javascript.
 As it turns out, this API provides an interface that is exactly for building synthesizers...</p>
 <p>So then i wanted to see if <a href="https://reactjs.org/">React</a> can be used to drive the event-loop
@@ -88,211 +135,230 @@ functions.</p>
 enough to drive an audio machine correctly (where 20 milliseconds off are already
 perceived as <em>not in the beat</em>). It's fun though!
 <a href="https://defgsus.github.io/blog/2021/10/12/wurst-web-synth.html">Have a try</a>...</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="office-schedule-data">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/office-schedule-data">office-schedule-data</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">data</div>
                             
                         </div>
-                        <div class="date">2021/09/20 to now</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>historic snapshots of free office appointment dates</p></div>
-                        
-                            <div class="description long"><p>The data output of <a href="#office-schedule-scraper">office-schedule-scraper</a>.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="kindergarten-times">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/kindergarten-times">kindergarten-times</a></div>
-                        <div class="tags grow">
+                
+                    <div class="repo" id="office-schedule-data" data-tags="archive data">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/office-schedule-data">office-schedule-data</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">archive</div>
+                                
+                                    <div class="tag">data</div>
+                                
+                            </div>
+                            <div class="date">2021/09/20 to 09/28</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>historic snapshots of free office appointment dates</p></div>
                             
-                                <div class="tag">data</div>
+                                <div class="description long"><p>The data output of <a href="#office-schedule-scraper">office-schedule-scraper</a>.</p></div>
                             
                         </div>
-                        <div class="date">2021/07/15 to now</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>historic timeline of arrival at kindergarten</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="office-schedule-scraper">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/office-schedule-scraper">office-schedule-scraper</a></div>
-                        <div class="tags grow">
+                
+                    <div class="repo" id="kindergarten-times" data-tags="archive data">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/kindergarten-times">kindergarten-times</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">archive</div>
+                                
+                                    <div class="tag">data</div>
+                                
+                            </div>
+                            <div class="date">2021/07/15 to 10/05</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>historic timeline of arrival at kindergarten</p></div>
                             
-                                <div class="tag">data</div>
+                                <div class="description long"><p>One of the important things each day is to generate data for this repository ;)</p></div>
                             
                         </div>
-                        <div class="date">2021/07/08 to now</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Scraper for (german) free dates at the public offices</p></div>
-                        
-                            <div class="description long"><p>This is recording hundrets of public office calendars across germany at an interval of
+                
+                    <div class="repo" id="office-schedule-scraper" data-tags="data">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/office-schedule-scraper">office-schedule-scraper</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">data</div>
+                                
+                            </div>
+                            <div class="date">2021/07/08 to 10/03</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Scraper for (german) free dates at the public offices</p></div>
+                            
+                                <div class="description long"><p>This is recording hundrets of public office calendars across germany at an interval of
 15 minutes.</p>
 <p>It's much more work than i anticipated in the first place and i'm still not sure
 exactly for what purpose.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="clipig">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/clipig">clipig</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">visual</div>
                             
                         </div>
-                        <div class="date">2021/04/30 to 06/09</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p><a href="https://openai.com">OpenAI</a>'s <a href="https://github.com/openai/CLIP">CLIP</a>
+                
+                    <div class="repo" id="clipig" data-tags="ml visual">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/clipig">clipig</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">ml</div>
+                                
+                                    <div class="tag">visual</div>
+                                
+                            </div>
+                            <div class="date">2021/04/30 to 06/09</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p><a href="https://openai.com">OpenAI</a>'s <a href="https://github.com/openai/CLIP">CLIP</a>
 based image generator with complex config file controlled transformation and training pipelines</p></div>
-                        
-                            <div class="description long"><p><em>The web</em> has become quite an amazing place: Train a model on some of it's data. Ask for a depiction
+                            
+                                <div class="description long"><p><em>The web</em> has become quite an amazing place: Train a model on some of it's data. Ask for a depiction
 of your favorite fantasy book. <a href="https://defgsus.github.io/blog/2021/04/28/malazan-clip-features.html">And it just does</a>!</p>
 <p>This is a somewhat usable tool for generating images using the CLIP critique. Check the
 <a href="https://defgsus.github.io/clipig/walkthrough.html">walkthrough</a>
 and <a href="https://defgsus.github.io/blog/2021/06/09/clipig-animal-transfer.html">some experimental results</a>.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="image-scraper">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/image-scraper">image-scraper</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">ai</div>
-                            
-                                <div class="tag">visual</div>
                             
                         </div>
-                        <div class="date">2021/04/18 to now</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Some basic image scraper with django as orm and server</p></div>
-                        
-                            <div class="description long"><p>Actually, this is just a small dev tool to download images (porn images mainly),
+                
+                    <div class="repo" id="image-scraper" data-tags="ml visual">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/image-scraper">image-scraper</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">ml</div>
+                                
+                                    <div class="tag">visual</div>
+                                
+                            </div>
+                            <div class="date">2021/04/18 to 09/14</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Some basic image scraper with django as orm and server</p></div>
+                            
+                                <div class="description long"><p>Actually, this is just a small dev tool to download images (porn images mainly),
 rate them via <a href="https://github.com/openai/CLIP">CLIP</a> and search through them using
 natural language and reference images.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="blog">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/jupyter.png" title="jupyter">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/blog">blog</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">ai</div>
-                            
-                                <div class="tag">audio</div>
-                            
-                                <div class="tag">blog</div>
-                            
-                                <div class="tag">visual</div>
-                            
-                                <div class="tag">web</div>
                             
                         </div>
-                        <div class="date">2021/02/26 to 09/09</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Repo of my blog</p></div>
-                        
-                            <div class="description long"><p>Guess the virus has taken it's toll. Or maybe because i'm 40. Anyways, this is my programming
+                
+                    <div class="repo" id="blog" data-tags="audio blog data github ml visual web">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/jupyter.png" title="jupyter">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/blog">blog</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">audio</div>
+                                
+                                    <div class="tag">blog</div>
+                                
+                                    <div class="tag">data</div>
+                                
+                                    <div class="tag">github</div>
+                                
+                                    <div class="tag">ml</div>
+                                
+                                    <div class="tag">visual</div>
+                                
+                                    <div class="tag">web</div>
+                                
+                            </div>
+                            <div class="date">2021/02/26 to 09/09</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Repo of my blog</p></div>
+                            
+                                <div class="description long"><p>Guess the virus has taken it's toll. Or maybe because i'm 40. Anyways, this is my programming
 blog. Using <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://jupyter.org/">Jupyter notebooks</a>
 as the basis for static site generation.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="ufa">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/js.png" title="js">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/ufa">ufa</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">web</div>
                             
                         </div>
-                        <div class="date">2021/02/21 to 02/25</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p><strong>Überwachung für Alle</strong> - self-surveillance browser add-on</p></div>
-                        
-                            <div class="description long"><p>Spy on your own browser actions (request, keystrokes, mouse actions) using this
+                
+                    <div class="repo" id="ufa" data-tags="privacy web">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/js.png" title="js">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/ufa">ufa</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">privacy</div>
+                                
+                                    <div class="tag">web</div>
+                                
+                            </div>
+                            <div class="date">2021/02/21 to 02/25</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p><strong>Überwachung für Alle</strong> - self-surveillance browser add-on</p></div>
+                            
+                                <div class="description long"><p>Spy on your own browser actions (request, keystrokes, mouse actions) using this
 small web extension and <a href="https://www.elastic.co/elasticsearch/">Elasticsearch</a>.</p>
 <p>Learned about the (somewhat unified) Browser Extensions API
 (<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions">MDN</a>, <a href="https://developer.chrome.com/docs/extensions/reference/">Chrome</a>)
-which is so powerful that i <strong>do not trust any extension</strong> except my own ones.
-Oh, and <a href="https://ublockorigin.com/">uBlock Origin</a>, of course.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="symmetrical-disco">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/symmetrical-disco">symmetrical-disco</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">visual</div>
+which is so powerful that <strong>i do not trust any browser extension anymore</strong>, except my own ones,
+and <a href="https://ublockorigin.com/">uBlock Origin</a> and <a href="https://github.com/gorhill/uMatrix">uMatrix</a>.
+The latter, though, i just trust out of good faith.</p></div>
                             
                         </div>
-                        <div class="date">2021/01/28 to 01/30</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>ray-tracer entirely in python</p></div>
-                        
-                            <div class="description long"><p>Thought: If i write the raytracer (in this case a sphere-tracer) in python, there are
-endless pythonian things i could do on top to create amazing images.</p>
+                
+                    <div class="repo" id="symmetrical-disco" data-tags="visual">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/symmetrical-disco">symmetrical-disco</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">visual</div>
+                                
+                            </div>
+                            <div class="date">2021/01/28 to 01/30</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>ray-tracer entirely in python</p></div>
+                            
+                                <div class="description long"><p>Thought: If i write the raytracer (in this case a sphere-tracer) in python, there are
+endless pythonian things i can do on top to create amazing images.</p>
 <p>Learned: Writing a raytracer in C or Cuda instead of python is <strong>not</strong> premature optimization.
-The python raytracer is so terribly slow that i actually did not fix the immediate bugs and just stopped.</p></div>
-                        
+The python raytracer is so terribly slow that i actually did not fix the immediate bugs and just stopped
+the experiment.</p></div>
+                            
+                        </div>
                     </div>
-                </div>
-            
+                
+            </div>
         </div>
     
-        <div class="year-block">
+        <div class="year-block" data-year="year" data-tags="archive data game lib ml">
             <div class="year">2020</div>
-            <div class="inside">
-            
-                <div class="repo" id="elastipy">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/netzkolchose/elastipy">elastipy</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">lib</div>
-                            
+                <div class="inside">
+                
+                    <div class="repo" id="elastipy" data-tags="data lib">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/netzkolchose/elastipy">elastipy</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">data</div>
+                                
+                                    <div class="tag">lib</div>
+                                
+                            </div>
+                            <div class="date">2020/12/23 to 2021/04/06</div>
                         </div>
-                        <div class="date">2020/12/23 to 2021/04/06</div>
-                    </div>
-                    <div class="inside">
-                        <div class="description short"><p>python elasticsearch query module for easily accessing nested aggregations and such</p></div>
-                        
-                            <div class="description long"><p>This is a library for <a href="https://www.elastic.co/elasticsearch/">Elasticsearch</a> queries. They
+                        <div class="inside">
+                            <div class="description short"><p>python elasticsearch query module for easily accessing nested aggregations and such</p></div>
+                            
+                                <div class="description long"><p>This is a library for <a href="https://www.elastic.co/elasticsearch/">Elasticsearch</a> queries. They
 provide <a href="https://github.com/elastic/elasticsearch-dsl-py">their own</a> library for that
 but it does not help with either generating the right query or accessing the results in
 a sane manner. Elastipy has a fully typed interface and tries to be smart with aggregation
@@ -303,50 +369,50 @@ documentation system in python is good only on the surface.
 Actually it's painful, not well documented and time consuming.
 No surprise, why all the major libs have their own documentation infrastructure
 (hacked <a href="https://www.sphinx-doc.org/">Sphinxes</a>).</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="cthulhu2d">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/cthulhu2d">cthulhu2d</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">game</div>
                             
                         </div>
-                        <div class="date">2020/12/04 to 12/20</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>toying with another game idea and the pymunk physics framework</p></div>
-                        
-                            <div class="description long"><p>Tried: A 2d minecraft.</p>
+                
+                    <div class="repo" id="cthulhu2d" data-tags="game">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/cthulhu2d">cthulhu2d</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">game</div>
+                                
+                            </div>
+                            <div class="date">2020/12/04 to 12/20</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>toying with another game idea and the pymunk physics framework</p></div>
+                            
+                                <div class="description long"><p>Tried: A 2d minecraft.</p>
 <p>Learned: That in order to pass objects, you have to completely destroy them or build a tunnel or somehting..</p>
 <p>This came out of a deep depression through covid winter 2020 with too much home schooling and home officing
 and no place to hide. In the end i did not came across the challange of designing a physical-model-based
 character that actually can walk. Tried evolutionary algos with complicated fitness evaluation and
 training pools stored in <a href="https://www.elastic.co/elasticsearch/">elasticsearch</a>.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="pypickpack">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/pypickpack">pypickpack</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">game</div>
                             
                         </div>
-                        <div class="date">2020/06/05 to 10/09</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>In an amazon fulfillment center near you the job application turns out to be
+                
+                    <div class="repo" id="pypickpack" data-tags="game">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/pypickpack">pypickpack</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">game</div>
+                                
+                            </div>
+                            <div class="date">2020/06/05 to 10/09</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>In an amazon fulfillment center near you the job application turns out to be
 against a bunch of newly designed super-efficient robots!</p></div>
-                        
-                            <div class="description long"><p>Started reworking the <a href="#pickpack">pickpack</a> idea into python to experiment
+                            
+                                <div class="description long"><p>Started reworking the <a href="#pickpack">pickpack</a> idea into python to experiment
 with <a href="https://en.wikipedia.org/wiki/Expected_utility_hypothesis">Maximum Expected Utility</a> described by
 <a href="http://aima.cs.berkeley.edu/">Artificial Intelligence: A Modern Approach (Russel &amp; Norvig)</a>.
 But it's still missing a straight game design.</p>
@@ -357,125 +423,129 @@ Of course, if the ever-present fulfillment center's performance measures are too
 the manager should come complaining.</p>
 <p>Learned: In python you won't get millions of search branches checked per second so you
 have to rely more on heuristics and cheats.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="trends-competition">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/trends-competition">trends-competition</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">ai</div>
                             
                         </div>
-                        <div class="date">2020/05/26</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Yet another <a href="https://www.kaggle.com/c/trends-assessment-prediction">TReNDS Neuroimaging competition</a> sourcecode</p></div>
-                        
-                            <div class="description long"><p>It was hosted on kaggle and <strong>a lot</strong> of teams joined. I only used <strong>relevance vector regression</strong> on
+                
+                    <div class="repo" id="trends-competition" data-tags="ml">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/trends-competition">trends-competition</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">ml</div>
+                                
+                            </div>
+                            <div class="date">2020/05/26</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Yet another <a href="https://www.kaggle.com/c/trends-assessment-prediction">TReNDS Neuroimaging competition</a> sourcecode</p></div>
+                            
+                                <div class="description long"><p>It was hosted on kaggle and <strong>a lot</strong> of teams joined. I only used <strong>relevance vector regression</strong> on
 the small MRT-based CSV tables which bought an evaluation error of 16.4% and place 891.
 The top solutions where 15.6%.</p>
 <p>Learned: That this particular problem in the competition was not helped by mere compute. The best teams used
 all kinds of complicated things and ensembled them together to gain just one percent better than a simple RVR
 on a fraction of the data.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="parking-data">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/parking-data">parking-data</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">data</div>
                             
                         </div>
-                        <div class="date">2020/04/07 to now</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>historic archive of free parking places across germany</p></div>
-                        
-                            <div class="description long"><p>The daily export of <a href="#parking-scraper">parking-scraper</a>.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="parking-scraper">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/parking-scraper">parking-scraper</a></div>
-                        <div class="tags grow">
+                
+                    <div class="repo" id="parking-data" data-tags="archive data">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/parking-data">parking-data</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">archive</div>
+                                
+                                    <div class="tag">data</div>
+                                
+                            </div>
+                            <div class="date">2020/04/07 to 2021/10/10</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>historic archive of free parking places across germany</p></div>
                             
-                                <div class="tag">data</div>
+                                <div class="description long"><p>The daily export of <a href="#parking-scraper">parking-scraper</a>.</p></div>
                             
                         </div>
-                        <div class="date">2020/03/24 to 2021/04/08</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>collection of scrapers to get parking space occupancy data across germany</p></div>
-                        
-                            <div class="description long"><p>It scrapes all those different little websites where free parking lots are displayed and stores the
+                
+                    <div class="repo" id="parking-scraper" data-tags="data">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/parking-scraper">parking-scraper</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">data</div>
+                                
+                            </div>
+                            <div class="date">2020/03/24 to 2021/04/08</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>collection of scrapers to get parking space occupancy data across germany</p></div>
+                            
+                                <div class="description long"><p>It scrapes all those different little websites where free parking lots are displayed and stores the
 numbers - every 5 minutes.
 There's a small article about the <a href="https://defgsus.github.io/blog/2021/04/08/one-year-parking.html">1st year of data</a>.</p></div>
-                        
+                            
+                        </div>
                     </div>
-                </div>
-            
+                
+            </div>
         </div>
     
-        <div class="year-block">
+        <div class="year-block" data-year="year" data-tags="game">
             <div class="year">2019</div>
-            <div class="inside">
-            
-                <div class="repo" id="pickpack">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/js.png" title="js">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/pickpack">pickpack</a></div>
-                        <div class="tags grow">
+                <div class="inside">
+                
+                    <div class="repo" id="pickpack" data-tags="game">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/js.png" title="js">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/pickpack">pickpack</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">game</div>
+                                
+                            </div>
+                            <div class="date">2019/04/05 to 04/09</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>react game in progress</p></div>
                             
-                                <div class="tag">game</div>
+                                <div class="description long"><p>Actually it's a political statement. Or it was planned to be. But it's
+missing the game idea. See <a href="#pypickpack">pypickpack</a></p></div>
                             
                         </div>
-                        <div class="date">2019/04/05 to 04/09</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>react game in progress</p></div>
-                        
-                            <div class="description long"><p>Actually it's a political statement. Or it was planned to be. But it's
-missing the game idea. See <a href="#pypickpack">pypickpack</a></p></div>
-                        
-                    </div>
-                </div>
-            
+                
+            </div>
         </div>
     
-        <div class="year-block">
+        <div class="year-block" data-year="year" data-tags="audio blog data game language lib shader visual web">
             <div class="year">2018</div>
-            <div class="inside">
-            
-                <div class="repo" id="shadertoz">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/jupyter.png" title="jupyter">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/shadertoz">shadertoz</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">data</div>
-                            
-                                <div class="tag">shader</div>
-                            
-                                <div class="tag">visual</div>
-                            
+                <div class="inside">
+                
+                    <div class="repo" id="shadertoz" data-tags="data shader visual">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/jupyter.png" title="jupyter">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/shadertoz">shadertoz</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">data</div>
+                                
+                                    <div class="tag">shader</div>
+                                
+                                    <div class="tag">visual</div>
+                                
+                            </div>
+                            <div class="date">2018/12/18 to 2019/06/23</div>
                         </div>
-                        <div class="date">2018/12/18 to 2019/06/23</div>
-                    </div>
-                    <div class="inside">
-                        <div class="description short"><p>momentarily a django using the shadertoy public api</p></div>
-                        
-                            <div class="description long"><p>Another personal plaything related to <a href="https://shadertoy.com">shadertoy.com</a>. Besids the official API
+                        <div class="inside">
+                            <div class="description short"><p>momentarily a django using the shadertoy public api</p></div>
+                            
+                                <div class="description long"><p>Another personal plaything related to <a href="https://shadertoy.com">shadertoy.com</a>. Besids the official API
 it also allows crawling the shadertoy website / internal API to retrieve comments.</p>
 <p>One of the goals is to be able to somehow search for specific formulas / syntax trees, by parsing
 all the GLSL in python. The parser somewhat works by adjusting an old
@@ -483,677 +553,703 @@ all the GLSL in python. The parser somewhat works by adjusting an old
 and adding the few GLSL specific things (<a href="https://github.com/defgsus/shadertoz/blob/b89c15db6dd4821126a3e970a57eadcb97f529d5/shaders/util/glsl/glsl.lark">glsl.lark</a>)
 and run it in <a href="https://github.com/lark-parser/lark">lark</a>. But it exponentially explodes in runtime when shown
 long and complicated formulas.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="pyvolution">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/pyvolution">pyvolution</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">lib</div>
                             
                         </div>
-                        <div class="date">2018/11/21</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>evolutionary python framework</p></div>
-                        
-                            <div class="description long"><p>Guess everybody has to release one of these libs once. It's not particularily good or clever, or even tested twice.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="processflow">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/processflow">processflow</a></div>
-                        <div class="tags grow">
+                
+                    <div class="repo" id="pyvolution" data-tags="lib">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/pyvolution">pyvolution</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">lib</div>
+                                
+                            </div>
+                            <div class="date">2018/11/21</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>evolutionary python framework</p></div>
                             
-                                <div class="tag">lib</div>
+                                <div class="description long"><p>Guess everybody has to release one of these libs once. It's not particularily good or clever, or even tested twice.</p></div>
                             
                         </div>
-                        <div class="date">2018/08/20</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Define a flow, fill with meaning and then run parallel and persistant jobs.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="django-joblog">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/django-joblog">django-joblog</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">lib</div>
+                
+                    <div class="repo" id="processflow" data-tags="lib">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/processflow">processflow</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">lib</div>
+                                
+                            </div>
+                            <div class="date">2018/08/20</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Define a flow, fill with meaning and then run parallel and persistant jobs.</p></div>
                             
                         </div>
-                        <div class="date">2018/07/31 to 2019/11/06</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>A generic django-utility that helps to log stuff to the database.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="django-clear-tables">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/django-clear-tables">django-clear-tables</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">lib</div>
+                
+                    <div class="repo" id="django-joblog" data-tags="lib">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/django-joblog">django-joblog</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">lib</div>
+                                
+                            </div>
+                            <div class="date">2018/07/31 to 2019/11/06</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>A generic django-utility that helps to log stuff to the database.</p></div>
                             
                         </div>
-                        <div class="date">2018/07/30 to 08/23</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>django manage.py task that clears the content of the django Permission and ContentTypes tables</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="lovebot">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/lovebot">lovebot</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">game</div>
+                
+                    <div class="repo" id="django-clear-tables" data-tags="lib">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/django-clear-tables">django-clear-tables</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">lib</div>
+                                
+                            </div>
+                            <div class="date">2018/07/30 to 08/23</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>django manage.py task that clears the content of the django Permission and ContentTypes tables</p></div>
                             
                         </div>
-                        <div class="date">2018/07/07 to 07/18</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Botlove python server and client + webclient</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="logmonitor">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/logmonitor">logmonitor</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">web</div>
+                
+                    <div class="repo" id="lovebot" data-tags="game">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/lovebot">lovebot</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">game</div>
+                                
+                            </div>
+                            <div class="date">2018/07/07 to 07/18</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Botlove python server and client + webclient</p></div>
                             
                         </div>
-                        <div class="date">2018/06/18 to 06/26</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Web-view for system logs</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="brain-discord">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/brain-discord">brain-discord</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">web</div>
+                
+                    <div class="repo" id="logmonitor" data-tags="web">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/logmonitor">logmonitor</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">web</div>
+                                
+                            </div>
+                            <div class="date">2018/06/18 to 06/26</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Web-view for system logs</p></div>
                             
                         </div>
-                        <div class="date">2018/06/15 to 07/30</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Yet another <a href="https://discord.com/">discord</a> bot</p></div>
-                        
-                            <div class="description long"><p>There was a time, when we used discord for work meetings. This little bot joined. It would
+                
+                    <div class="repo" id="brain-discord" data-tags="web">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/brain-discord">brain-discord</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">web</div>
+                                
+                            </div>
+                            <div class="date">2018/06/15 to 07/30</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Yet another <a href="https://discord.com/">discord</a> bot</p></div>
+                            
+                                <div class="description long"><p>There was a time, when we used discord for work meetings. This little bot joined. It would
 post <em>Live of Brian</em> or <em>Bladerunner</em> citations with the person names replaced by the names of the chat members.
 It could display tickets from <a href="https://www.jetbrains.com/youtrack/">YouTrack</a>. And it would
 engage in a german <a href="https://en.wikipedia.org/wiki/ELIZA">Eliza</a> therapy chat.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="musicpatterns">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/jupyter.png" title="jupyter">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/musicpatterns">musicpatterns</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">audio</div>
                             
                         </div>
-                        <div class="date">2018/05/16 to 2019/11/24</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>"Musical" pattern generation in python</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="bm-wahl-18-jena">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/jupyter.png" title="jupyter">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/bm-wahl-18-jena">bm-wahl-18-jena</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">data</div>
+                
+                    <div class="repo" id="musicpatterns" data-tags="audio">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/jupyter.png" title="jupyter">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/musicpatterns">musicpatterns</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">audio</div>
+                                
+                            </div>
+                            <div class="date">2018/05/16 to 2019/11/24</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>"Musical" pattern generation in python</p></div>
                             
                         </div>
-                        <div class="date">2018/05/04 to 05/08</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Oberbürgermeisterwahl Jena/Thüringen 2018 - Datenbeschaffung und Analyse</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="thegame">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/thegame">thegame</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">game</div>
+                
+                    <div class="repo" id="bm-wahl-18-jena" data-tags="data">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/jupyter.png" title="jupyter">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/bm-wahl-18-jena">bm-wahl-18-jena</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">data</div>
+                                
+                            </div>
+                            <div class="date">2018/05/04 to 05/08</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Oberbürgermeisterwahl Jena/Thüringen 2018 - Datenbeschaffung und Analyse</p></div>
                             
                         </div>
-                        <div class="date">2018/04/01 to 2020/04/15</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>testbed for python based pixel adventure</p></div>
-                        
-                            <div class="description long"><p>OpenGL rendering graph and <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* search</a> movement.</p>
+                
+                    <div class="repo" id="thegame" data-tags="game">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/thegame">thegame</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">game</div>
+                                
+                            </div>
+                            <div class="date">2018/04/01 to 2020/04/15</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>testbed for python based pixel adventure</p></div>
+                            
+                                <div class="description long"><p>OpenGL rendering graph and <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* search</a> movement.</p>
 <p>The rendering is particularily nice, optically. It uses <em>sphere tracing</em> through a pre-generated
 3D distance field for the soft-shadows.</p>
 <p>Also started an editor in <a href="https://github.com/pyqt/">PyQt</a>. Learned: Programming Qt in python
 is almost fun, compared to C++.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="agenda90210-blog">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/data.png" title="data">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/agenda90210-blog">agenda90210-blog</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">blog</div>
                             
                         </div>
-                        <div class="date">2018/02/06 to 03/09</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>external data for <a href="https://agenda90210.blogspot.com/">agenda90210 blog</a></p></div>
-                        
-                            <div class="description long"><p>At the time i simply found it amazing that one can freely post javascript on blogspot.com.
+                
+                    <div class="repo" id="agenda90210-blog" data-tags="blog data language">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/data.png" title="data">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/agenda90210-blog">agenda90210-blog</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">blog</div>
+                                
+                                    <div class="tag">data</div>
+                                
+                                    <div class="tag">language</div>
+                                
+                            </div>
+                            <div class="date">2018/02/06 to 03/09</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>external data for <a href="https://agenda90210.blogspot.com/">agenda90210 blog</a></p></div>
+                            
+                                <div class="description long"><p>At the time i simply found it amazing that one can freely post javascript on blogspot.com.
 So i published a few data-mining articles. When the data became too much for one post
 (the posting interface would not work anymore) i moved it to this repo and requested
 it externally.</p></div>
-                        
+                            
+                        </div>
                     </div>
-                </div>
-            
+                
+            </div>
         </div>
     
-        <div class="year-block">
+        <div class="year-block" data-year="year" data-tags="data github language lib ml privacy shader visual web">
             <div class="year">2017</div>
-            <div class="inside">
-            
-                <div class="repo" id="wikistats">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/wikistats">wikistats</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">data</div>
+                <div class="inside">
+                
+                    <div class="repo" id="wikistats" data-tags="data">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/wikistats">wikistats</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">data</div>
+                                
+                            </div>
+                            <div class="date">2017/12/14 to 12/20</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>just fascinated by wikimedia's pageviews data, doing some correlations</p></div>
                             
                         </div>
-                        <div class="date">2017/12/14 to 12/20</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>just fascinated by wikimedia's pageviews data, doing some correlations</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="shadertox">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/js.png" title="js">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/shadertox">shadertox</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">visual</div>
-                            
-                                <div class="tag">web</div>
+                
+                    <div class="repo" id="shadertox" data-tags="shader visual web">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/js.png" title="js">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/shadertox">shadertox</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">shader</div>
+                                
+                                    <div class="tag">visual</div>
+                                
+                                    <div class="tag">web</div>
+                                
+                            </div>
+                            <div class="date">2017/12/08 to 12/11</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Shader in da Browser via da Django</p></div>
                             
                         </div>
-                        <div class="date">2017/12/08 to 12/11</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Shader in da Browser via da Django</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="fritztrack">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/fritztrack">fritztrack</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">web</div>
+                
+                    <div class="repo" id="fritztrack" data-tags="privacy web">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/fritztrack">fritztrack</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">privacy</div>
+                                
+                                    <div class="tag">web</div>
+                                
+                            </div>
+                            <div class="date">2017/11/28 to 12/14</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Owning the Fritz!Box with Django</p></div>
                             
                         </div>
-                        <div class="date">2017/11/28 to 12/14</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Owning the Fritz!Box with Django</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="wahl17">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/html.png" title="html">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/wahl17">wahl17</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">data</div>
+                
+                    <div class="repo" id="wahl17" data-tags="data">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/html.png" title="html">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/wahl17">wahl17</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">data</div>
+                                
+                            </div>
+                            <div class="date">2017/09/26 to 09/27</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Bundestagswahl 2017 Wahlergebnisse</p></div>
                             
                         </div>
-                        <div class="date">2017/09/26 to 09/27</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Bundestagswahl 2017 Wahlergebnisse</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="github-nodes">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/js.png" title="js">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/github-nodes">github-nodes</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">data</div>
+                
+                    <div class="repo" id="github-nodes" data-tags="data github">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/js.png" title="js">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/github-nodes">github-nodes</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">data</div>
+                                
+                                    <div class="tag">github</div>
+                                
+                            </div>
+                            <div class="date">2017/07/09</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Visualizing connections between github users and repos (python+js)</p></div>
                             
                         </div>
-                        <div class="date">2017/07/09</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Visualizing connections between github users and repos (python+js)</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="afd-chat">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/js.png" title="js">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/afd-chat">afd-chat</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">data</div>
+                
+                    <div class="repo" id="afd-chat" data-tags="data language">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/js.png" title="js">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/afd-chat">afd-chat</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">data</div>
+                                
+                                    <div class="tag">language</div>
+                                
+                            </div>
+                            <div class="date">2017/06/26 to 06/28</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>afd party's social media leak as a service</p></div>
                             
                         </div>
-                        <div class="date">2017/06/26 to 06/28</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>afd party's social media leak as a service</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="neurotools">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/neurotools">neurotools</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">lib</div>
+                
+                    <div class="repo" id="neurotools" data-tags="lib ml">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/neurotools">neurotools</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">lib</div>
+                                
+                                    <div class="tag">ml</div>
+                                
+                            </div>
+                            <div class="date">2017/03/31 to 2018/04/27</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>small collection of brainimaging helper scripts in python</p></div>
                             
                         </div>
-                        <div class="date">2017/03/31 to 2018/04/27</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>small collection of brainimaging helper scripts in python</p></div>
-                        
-                    </div>
-                </div>
-            
+                
+            </div>
         </div>
     
-        <div class="year-block">
+        <div class="year-block" data-year="year" data-tags="audio compiler lib ml shader visual">
             <div class="year">2016</div>
-            <div class="inside">
-            
-                <div class="repo" id="lolpig">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/lolpig">lolpig</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">compiler</div>
-                            
-                                <div class="tag">lib</div>
+                <div class="inside">
+                
+                    <div class="repo" id="lolpig" data-tags="compiler lib">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/lolpig">lolpig</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">compiler</div>
+                                
+                                    <div class="tag">lib</div>
+                                
+                            </div>
+                            <div class="date">2016/12/22 to 2017/01/09</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>LOw-Level Python Interface Generator</p></div>
                             
                         </div>
-                        <div class="date">2016/12/22 to 2017/01/09</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>LOw-Level Python Interface Generator</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="cppy">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/cppy">cppy</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">compiler</div>
-                            
-                                <div class="tag">lib</div>
+                
+                    <div class="repo" id="cppy" data-tags="compiler lib">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/cppy">cppy</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">compiler</div>
+                                
+                                    <div class="tag">lib</div>
+                                
+                            </div>
+                            <div class="date">2016/12/01 to 12/13</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>python to cpp converter - the hard way</p></div>
                             
                         </div>
-                        <div class="date">2016/12/01 to 12/13</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>python to cpp converter - the hard way</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="pector">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/pector">pector</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">lib</div>
+                
+                    <div class="repo" id="pector" data-tags="lib visual">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/pector">pector</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">lib</div>
+                                
+                                    <div class="tag">visual</div>
+                                
+                            </div>
+                            <div class="date">2016/11/29 to 2021/01/26</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>simple python vector/matrix lib with focus on geomety</p></div>
                             
                         </div>
-                        <div class="date">2016/11/29 to 2021/01/26</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>simple python vector/matrix lib with focus on geomety</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="QShadertoy">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/cpp.png" title="cpp">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/QShadertoy">QShadertoy</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">visual</div>
+                
+                    <div class="repo" id="QShadertoy" data-tags="shader visual">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/cpp.png" title="cpp">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/QShadertoy">QShadertoy</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">shader</div>
+                                
+                                    <div class="tag">visual</div>
+                                
+                            </div>
+                            <div class="date">2016/06/03 to 10/25</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Off-line Shadertoy renderer using web-API </p></div>
                             
                         </div>
-                        <div class="date">2016/06/03 to 10/25</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Off-line Shadertoy renderer using web-API </p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="Syntak">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/cpp.png" title="cpp">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/Syntak">Syntak</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">compiler</div>
-                            
-                                <div class="tag">lib</div>
+                
+                    <div class="repo" id="Syntak" data-tags="compiler lib">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/cpp.png" title="cpp">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/Syntak">Syntak</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">compiler</div>
+                                
+                                    <div class="tag">lib</div>
+                                
+                            </div>
+                            <div class="date">2016/09/26</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Generative parser with runtime syntax definition</p></div>
                             
                         </div>
-                        <div class="date">2016/09/26</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Generative parser with runtime syntax definition</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="sonot">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/cpp.png" title="cpp">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/sonot">sonot</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">audio</div>
+                
+                    <div class="repo" id="sonot" data-tags="audio">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/cpp.png" title="cpp">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/sonot">sonot</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">audio</div>
+                                
+                            </div>
+                            <div class="date">2016/08/11 to 11/03</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Spanish Organ Tablature Notation</p></div>
                             
                         </div>
-                        <div class="date">2016/08/11 to 11/03</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Spanish Organ Tablature Notation</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="csmod040">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/cpp.png" title="cpp">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/csmod040">csmod040</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">audio</div>
-                            
-                                <div class="tag">visual</div>
+                
+                    <div class="repo" id="csmod040" data-tags="audio visual">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/cpp.png" title="cpp">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/csmod040">csmod040</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">audio</div>
+                                
+                                    <div class="tag">visual</div>
+                                
+                            </div>
+                            <div class="date">2014/06/15 to 2016/07/11</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>CS Modular Editor</p></div>
                             
                         </div>
-                        <div class="date">2014/06/15 to 2016/07/11</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>CS Modular Editor</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="beat-detect">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/cpp.png" title="cpp">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/beat-detect">beat-detect</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">lib</div>
+                
+                    <div class="repo" id="beat-detect" data-tags="audio lib">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/cpp.png" title="cpp">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/beat-detect">beat-detect</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">audio</div>
+                                
+                                    <div class="tag">lib</div>
+                                
+                            </div>
+                            <div class="date">2011/08/07 to 2016/07/11</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Attempt to refacture Rob Harper's beat-detect code into a useable cross-platform library</p></div>
                             
                         </div>
-                        <div class="date">2011/08/07 to 2016/07/11</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Attempt to refacture Rob Harper's beat-detect code into a useable cross-platform library</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="solstice">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/js.png" title="js">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/solstice">solstice</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">visual</div>
+                
+                    <div class="repo" id="solstice" data-tags="visual">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/js.png" title="js">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/solstice">solstice</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">visual</div>
+                                
+                            </div>
+                            <div class="date">2016/05/10 to 05/14</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>"Solstice 2016" happening interface</p></div>
                             
                         </div>
-                        <div class="date">2016/05/10 to 05/14</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>"Solstice 2016" happening interface</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="neurost">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/glsl.png" title="glsl">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/neurost">neurost</a></div>
-                        <div class="tags grow">
+                
+                    <div class="repo" id="neurost" data-tags="ml shader">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/glsl.png" title="glsl">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/neurost">neurost</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">ml</div>
+                                
+                                    <div class="tag">shader</div>
+                                
+                            </div>
+                            <div class="date">2016/02/09 to 02/10</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Neuronal ShaderToy Framework</p></div>
                             
-                                <div class="tag">ai</div>
-                            
-                                <div class="tag">shader</div>
+                                <div class="description long"><p>From the good ol' <a href="https://defgsus.github.io/blog/2021/10/12/kaliset-explorer.html">Shadertoy times</a>.</p></div>
                             
                         </div>
-                        <div class="date">2016/02/09 to 02/10</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Neuronal ShaderToy Framework</p></div>
-                        
-                    </div>
-                </div>
-            
+                
+            </div>
         </div>
     
-        <div class="year-block">
+        <div class="year-block" data-year="year" data-tags="compiler data fractal lib ml visual">
             <div class="year">2015</div>
-            <div class="inside">
-            
-                <div class="repo" id="mnn">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/cpp.png" title="cpp">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/mnn">mnn</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">ai</div>
-                            
-                                <div class="tag">lib</div>
+                <div class="inside">
+                
+                    <div class="repo" id="mnn" data-tags="lib ml">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/cpp.png" title="cpp">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/mnn">mnn</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">lib</div>
+                                
+                                    <div class="tag">ml</div>
+                                
+                            </div>
+                            <div class="date">2014/05/09 to 2016/01/19</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>modular neuronal network lib </p></div>
                             
                         </div>
-                        <div class="date">2014/05/09 to 2016/01/19</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>modular neuronal network lib </p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="brainf">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/cpp.png" title="cpp">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/brainf">brainf</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">compiler</div>
-                            
-                                <div class="tag">lib</div>
+                
+                    <div class="repo" id="brainf" data-tags="compiler lib">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/cpp.png" title="cpp">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/brainf">brainf</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">compiler</div>
+                                
+                                    <div class="tag">lib</div>
+                                
+                            </div>
+                            <div class="date">2015/03/24</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Brainfuck interpreter and evolutionary framework</p></div>
                             
                         </div>
-                        <div class="date">2015/03/24</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Brainfuck interpreter and evolutionary framework</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="sociopyth">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/python.png" title="python">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/sociopyth">sociopyth</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">data</div>
+                
+                    <div class="repo" id="sociopyth" data-tags="data">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/python.png" title="python">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/sociopyth">sociopyth</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">data</div>
+                                
+                            </div>
+                            <div class="date">2015/02/03 to 2016/11/17</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>collection of scripts to download stuff from the web</p></div>
                             
                         </div>
-                        <div class="date">2015/02/03 to 2016/11/17</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>collection of scripts to download stuff from the web</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="kaliset">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/cpp.png" title="cpp">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/kaliset">kaliset</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">fractal</div>
-                            
-                                <div class="tag">visual</div>
-                            
+                
+                    <div class="repo" id="kaliset" data-tags="fractal visual">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/cpp.png" title="cpp">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/kaliset">kaliset</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">fractal</div>
+                                
+                                    <div class="tag">visual</div>
+                                
+                            </div>
+                            <div class="date">2015/01/29</div>
                         </div>
-                        <div class="date">2015/01/29</div>
-                    </div>
-                    <div class="inside">
-                        <div class="description short"><p>kaliset explorer</p></div>
-                        
-                            <div class="description long"><p>There is this user called <strong>Kali</strong> who
+                        <div class="inside">
+                            <div class="description short"><p>kaliset explorer</p></div>
+                            
+                                <div class="description long"><p>There is this user called <strong>Kali</strong> who
 <a href="https://www.fractalforums.com/new-theories-and-research/very-simple-formula-for-fractal-patterns/">posted on fractal forums</a>
 this amazing formula. It got very popular on <a href="https://www.shadertoy.com/results?query=kaliset">Shadertoy</a>.
 And i used it <a href="https://vimeo.com/126536758">fulldome</a> once in a while.</p>
 <p>This is a C++ implementation.</p></div>
-                        
+                            
+                        </div>
                     </div>
-                </div>
-            
+                
+            </div>
         </div>
     
-        <div class="year-block">
+        <div class="year-block" data-year="year" data-tags="audio game lib ml visual">
             <div class="year">2014</div>
-            <div class="inside">
-            
-                <div class="repo" id="scheeder">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/cpp.png" title="cpp">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/scheeder">scheeder</a></div>
-                        <div class="tags grow">
+                <div class="inside">
+                
+                    <div class="repo" id="scheeder" data-tags="lib visual">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/cpp.png" title="cpp">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/scheeder">scheeder</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">lib</div>
+                                
+                                    <div class="tag">visual</div>
+                                
+                            </div>
+                            <div class="date">2014/06/01 to 06/20</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>OpenGL / GLSL in Qt Project as demonstration for student classes</p></div>
                             
-                                <div class="tag">lib</div>
-                            
-                                <div class="tag">visual</div>
+                                <div class="description long"><p>Well, it was just one class where a <a href="https://soundcloud.com/a_s_tarantoga">friend</a> was teaching at the time.</p></div>
                             
                         </div>
-                        <div class="date">2014/06/01 to 06/20</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>OpenGL / GLSL in Qt Project as demonstration for student classes</p></div>
-                        
-                            <div class="description long"><p>Well, it was just one class where a <a href="https://soundcloud.com/a_s_tarantoga">friend</a> was teaching at the time.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="ttt">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/cpp.png" title="cpp">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/ttt">ttt</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">ai</div>
-                            
-                                <div class="tag">game</div>
+                
+                    <div class="repo" id="ttt" data-tags="game ml">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/cpp.png" title="cpp">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/ttt">ttt</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">game</div>
+                                
+                                    <div class="tag">ml</div>
+                                
+                            </div>
+                            <div class="date">2014/03/17 to 03/27</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>TicTacToe With Capturing - engine</p></div>
                             
                         </div>
-                        <div class="date">2014/03/17 to 03/27</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>TicTacToe With Capturing - engine</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="shatrabase">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/cpp.png" title="cpp">
-                        <div class="name margin-right"><a href="https://github.com/franzm/shatrabase">shatrabase</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">ai</div>
-                            
-                                <div class="tag">game</div>
-                            
+                
+                    <div class="repo" id="shatrabase" data-tags="game ml">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/cpp.png" title="cpp">
+                            <div class="name margin-right"><a href="https://github.com/franzm/shatrabase">shatrabase</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">game</div>
+                                
+                                    <div class="tag">ml</div>
+                                
+                            </div>
+                            <div class="date">2014/02/20 to 2018/01/21</div>
                         </div>
-                        <div class="date">2014/02/20 to 2018/01/21</div>
-                    </div>
-                    <div class="inside">
-                        <div class="description short"><p>database and engine host for the Altai game Shatra, derived from ChessX</p></div>
-                        
-                            <div class="description long"><p>A project with <a href="http://afkm.com/">Francis Monkman</a>. Through friends in Russia he got into
+                        <div class="inside">
+                            <div class="description short"><p>database and engine host for the Altai game Shatra, derived from ChessX</p></div>
+                            
+                                <div class="description long"><p>A project with <a href="http://afkm.com/">Francis Monkman</a>. Through friends in Russia he got into
 contact with this game called Shatra. It's the mongolian version of a checkers-like game.
 Some russian suggested to use chess figures which makes it a kind of turbo-checker-chess.</p>
 <p>It's a cool game and Francis has been working for decades on efficient
@@ -1162,73 +1258,75 @@ particular rule set.</p>
 <p>We forked <a href="https://chessx.sourceforge.io/">ChessX</a> which is a Qt/C++ project, mainly
 for archiving and studying chess games, and extended it to both Shatra versions and
 added a play mode.</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="csmod2">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/cpp.png" title="cpp">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/csmod2">csmod2</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">audio</div>
-                            
-                                <div class="tag">visual</div>
                             
                         </div>
-                        <div class="date">2014/02/06 to 02/08</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>CymaSonics Modular II - A modular audio/video framework in Qt</p></div>
-                        
-                    </div>
-                </div>
-            
-                <div class="repo" id="cudagol">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/cpp.png" title="cpp">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/cudagol">cudagol</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">ai</div>
-                            
-                                <div class="tag">game</div>
+                
+                    <div class="repo" id="csmod2" data-tags="audio visual">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/cpp.png" title="cpp">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/csmod2">csmod2</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">audio</div>
+                                
+                                    <div class="tag">visual</div>
+                                
+                            </div>
+                            <div class="date">2014/02/06 to 02/08</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>CymaSonics Modular II - A modular audio/video framework in Qt</p></div>
                             
                         </div>
-                        <div class="date">2014/01/29</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>Game Of Life implemented in Cuda</p></div>
-                        
+                
+                    <div class="repo" id="cudagol" data-tags="game ml">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/cpp.png" title="cpp">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/cudagol">cudagol</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">game</div>
+                                
+                                    <div class="tag">ml</div>
+                                
+                            </div>
+                            <div class="date">2014/01/29</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>Game Of Life implemented in Cuda</p></div>
+                            
+                        </div>
                     </div>
-                </div>
-            
+                
+            </div>
         </div>
     
-        <div class="year-block">
+        <div class="year-block" data-year="year" data-tags="audio lib">
             <div class="year">2013</div>
-            <div class="inside">
-            
-                <div class="repo" id="rsom">
-                    <div class="flex-row">
-                        <img class="language" src="img/tags/cpp.png" title="cpp">
-                        <div class="name margin-right"><a href="https://github.com/defgsus/rsom">rsom</a></div>
-                        <div class="tags grow">
-                            
-                                <div class="tag">audio</div>
-                            
-                                <div class="tag">lib</div>
+                <div class="inside">
+                
+                    <div class="repo" id="rsom" data-tags="audio lib">
+                        <div class="flex-row">
+                            <img class="language" src="img/tags/cpp.png" title="cpp">
+                            <div class="name margin-right"><a href="https://github.com/defgsus/rsom">rsom</a></div>
+                            <div class="tags grow">
+                                
+                                    <div class="tag">audio</div>
+                                
+                                    <div class="tag">lib</div>
+                                
+                            </div>
+                            <div class="date">2013/12/20 to 2014/01/02</div>
+                        </div>
+                        <div class="inside">
+                            <div class="description short"><p>A tool for Self-Organizing Maps from audio data for use with NI Reaktor</p></div>
                             
                         </div>
-                        <div class="date">2013/12/20 to 2014/01/02</div>
                     </div>
-                    <div class="inside">
-                        <div class="description short"><p>A tool for Self-Organizing Maps from audio data for use with NI Reaktor</p></div>
-                        
-                    </div>
-                </div>
-            
+                
+            </div>
         </div>
     
 </div>
