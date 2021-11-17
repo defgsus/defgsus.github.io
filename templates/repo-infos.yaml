@@ -7,11 +7,30 @@ defgsus:
   long_desc: ''
 
 defgsus.github.io:
-  categories: profile
+  categories: github
   short_desc: |
     The index
   long_desc: |
     You are currently viewing it's [*github pages*](https://guides.github.com/features/pages/)!
+
+ParkAPI:
+  hide: true
+
+gharchive-stats:
+  categories: data github
+  short_desc: |
+    Personal plaything to make some sense of the gharchive.org data without a google account ;)
+  long_desc: |
+    A collection of github repos which have been pushed to in some automatic fashion during 2018:
+    [defgsus.github.io/gharchive-stats/automatic.html](https://defgsus.github.io/gharchive-stats/automatic.html)
+
+    Learned: [some patience](https://defgsus.github.io/blog/2021/11/12/gharchive-first-post.html)
+
+bahn-api-history:
+  categories: data archive
+  short_desc: |
+    Historic changelog of Deutsche Bahn Open API data (stations, free parking lots and elevator status)
+  long_desc: ''
 
 wurst:
   categories: audio web
@@ -34,17 +53,18 @@ wurst:
     [Have a try](https://defgsus.github.io/blog/2021/10/12/wurst-web-synth.html)...
 
 office-schedule-data:
-  categories: data
+  categories: data archive
   short_desc: |
     historic snapshots of free office appointment dates
   long_desc: |
     The data output of [office-schedule-scraper](#office-schedule-scraper).
 
 kindergarten-times:
-  categories: data
+  categories: data archive
   short_desc: |
     historic timeline of arrival at kindergarten
-  long_desc: ''
+  long_desc: |
+    One of the important things each day is to generate data for this repository ;)
 
 office-schedule-scraper:
   categories: data
@@ -58,7 +78,7 @@ office-schedule-scraper:
     exactly for what purpose.
 
 clipig:
-  categories: visual
+  categories: visual ml
   short_desc: |
     [OpenAI](https://openai.com)'s [CLIP](https://github.com/openai/CLIP)
     based image generator with complex config file controlled transformation and training pipelines
@@ -71,7 +91,7 @@ clipig:
     and [some experimental results](https://defgsus.github.io/blog/2021/06/09/clipig-animal-transfer.html).
 
 image-scraper:
-  categories: visual ai
+  categories: visual ml
   short_desc: |
     Some basic image scraper with django as orm and server
   long_desc: |
@@ -80,7 +100,7 @@ image-scraper:
     natural language and reference images.
 
 blog:
-  categories: blog audio visual ai web
+  categories: blog audio visual ml web data github
   short_desc: |
     Repo of my blog
   long_desc: |
@@ -89,7 +109,7 @@ blog:
     as the basis for static site generation.
 
 ufa:
-  categories: web
+  categories: web privacy
   short_desc: |
     **Überwachung für Alle** - self-surveillance browser add-on
   long_desc: |
@@ -98,11 +118,12 @@ ufa:
 
     Learned about the (somewhat unified) Browser Extensions API
     ([MDN](https://developer.mozilla.org/en-US/Add-ons/WebExtensions), [Chrome](https://developer.chrome.com/docs/extensions/reference/))
-    which is so powerful that i **do not trust any extension** except my own ones.
-    Oh, and [uBlock Origin](https://ublockorigin.com/), of course.
+    which is so powerful that **i do not trust any browser extension anymore**, except my own ones,
+    and [uBlock Origin](https://ublockorigin.com/) and [uMatrix](https://github.com/gorhill/uMatrix).
+    The latter, though, i just trust out of good faith.
 
 elastipy:
-  categories: lib
+  categories: lib data
   short_desc: |
     python elasticsearch query module for easily accessing nested aggregations and such
   long_desc: |
@@ -125,10 +146,11 @@ symmetrical-disco:
     ray-tracer entirely in python
   long_desc: |
     Thought: If i write the raytracer (in this case a sphere-tracer) in python, there are
-    endless pythonian things i could do on top to create amazing images.
+    endless pythonian things i can do on top to create amazing images.
 
     Learned: Writing a raytracer in C or Cuda instead of python is **not** premature optimization.
-    The python raytracer is so terribly slow that i actually did not fix the immediate bugs and just stopped.
+    The python raytracer is so terribly slow that i actually did not fix the immediate bugs and just stopped
+    the experiment.
 
 cthulhu2d:
   categories: game
@@ -165,7 +187,7 @@ pypickpack:
     have to rely more on heuristics and cheats.
 
 trends-competition:
-  categories: ai
+  categories: ml
   short_desc: |
     Yet another [TReNDS Neuroimaging competition](https://www.kaggle.com/c/trends-assessment-prediction) sourcecode
   long_desc: |
@@ -178,7 +200,7 @@ trends-competition:
     on a fraction of the data.
 
 parking-data:
-  categories: data
+  categories: data archive
   short_desc: |
     historic archive of free parking places across germany
   long_desc: |
@@ -290,7 +312,7 @@ thegame:
     is almost fun, compared to C++.
 
 agenda90210-blog:
-  categories: blog
+  categories: blog data language
   language: data
   short_desc: |
     external data for [agenda90210 blog](https://agenda90210.blogspot.com/)
@@ -307,13 +329,13 @@ wikistats:
   long_desc: ''
 
 shadertox:
-  categories: visual web
+  categories: visual web shader
   short_desc: |
     Shader in da Browser via da Django
   long_desc: ''
 
 fritztrack:
-  categories: web
+  categories: web privacy
   short_desc: |
     Owning the Fritz!Box with Django
   long_desc: ''
@@ -325,19 +347,19 @@ wahl17:
   long_desc: ''
 
 github-nodes:
-  categories: data
+  categories: data github
   short_desc: |
     Visualizing connections between github users and repos (python+js)
   long_desc: ''
 
 afd-chat:
-  categories: data
+  categories: data language
   short_desc: |
     afd party's social media leak as a service
   long_desc: ''
 
 neurotools:
-  categories: lib
+  categories: lib ml
   short_desc: |
     small collection of brainimaging helper scripts in python
   long_desc: ''
@@ -355,13 +377,13 @@ cppy:
   long_desc: ''
 
 pector:
-  categories: lib
+  categories: lib visual
   short_desc: |
     simple python vector/matrix lib with focus on geomety
   long_desc: ''
 
 QShadertoy:
-  categories: visual
+  categories: visual shader
   short_desc: |
     Off-line Shadertoy renderer using web-API 
   long_desc: ''
@@ -385,7 +407,7 @@ csmod040:
   long_desc: ''
 
 beat-detect:
-  categories: lib
+  categories: lib audio
   short_desc: |
     Attempt to refacture Rob Harper's beat-detect code into a useable cross-platform library
   long_desc: ''
@@ -397,13 +419,14 @@ solstice:
   long_desc: ''
 
 neurost:
-  categories: ai shader
+  categories: ml shader
   short_desc: |
     Neuronal ShaderToy Framework
-  long_desc: ''
+  long_desc: |
+    From the good ol' [Shadertoy times](https://defgsus.github.io/blog/2021/10/12/kaliset-explorer.html).
 
 mnn:
-  categories: lib ai
+  categories: lib ml
   short_desc: |
     modular neuronal network lib 
   long_desc: ''
@@ -440,7 +463,7 @@ scheeder:
     Well, it was just one class where a [friend](https://soundcloud.com/a_s_tarantoga) was teaching at the time.
 
 shatrabase:
-  categories: game ai
+  categories: game ml
   short_desc: |
     database and engine host for the Altai game Shatra, derived from ChessX
   long_desc: |
@@ -457,7 +480,7 @@ shatrabase:
     added a play mode.
 
 ttt:
-  categories: game ai
+  categories: game ml
   short_desc: |
     TicTacToe With Capturing - engine
   long_desc: ''
@@ -469,7 +492,7 @@ csmod2:
   long_desc: ''
 
 cudagol:
-  categories: game ai
+  categories: game ml
   short_desc: |
     Game Of Life implemented in Cuda
   long_desc: ''
