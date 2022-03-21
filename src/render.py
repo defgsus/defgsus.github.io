@@ -100,13 +100,25 @@ def render_index():
     repo_dates = get_repo_dates()
     tag_images = set(n.split("/")[-1][:-4] for n in glob.glob(str(OUTPUT_PATH / "img" / "tags" / "*.png")))
 
+    missing_infos = []
+    for repo in repo_list:
+        if repo["name"] not in repo_infos:
+            missing_infos.append(repo)
+
+    if missing_infos:
+        print("Missing repos in templates/repo-infos.yaml. Add them with:\n")
+        for repo in missing_infos:
+            print(
+                f"{repo['name']}:\n"
+                f"  categories:\n"
+                f"  short_desc: {repo['description']}\n"
+                f"  long_desc: ''"
+            )
+        exit(1)
+
     repos_by_year = {}
     for repo in repo_list:
-        try:
-            repo_info = repo_infos[repo["name"]]
-        except KeyError:
-            print(json.dumps(repo, indent=2))
-            raise KeyError(f'missing info for {repo["name"]}')
+        repo_info = repo_infos[repo["name"]]
 
         if repo_info.get("hide"):
             continue

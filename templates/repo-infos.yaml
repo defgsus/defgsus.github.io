@@ -1,3 +1,73 @@
+
+billion-bubbles:
+  categories: data web
+  short_desc: tool and website for graphing the top shareholders/insiders in (north american) capitalism
+  long_desc: |
+    I was following some crazy stream of desire to *once and for all* point the finger at the true
+    enemies of beauty and creativity... using the nasdaq.com API. Not the official of course, but their
+    own website API which is not restricted by quota. Still it was days and days of downloading to
+    get (probably) the whole graph of shareholders and insiders from the nasdaq database.
+
+    Can i point the finger now? Sure! Blackrock, Vanguard, Fidelity, Price T Rowe, Morgan Stanley,
+    Wellington, Bank of America ... simply [the big bubbles](https://defgsus.github.io/billion-bubbles/).
+
+
+frontpage-archive-2:
+  categories: media archive
+  short_desc: archive of german online press article titles
+  long_desc: |
+    Same purpose as the [teletext-archive-unicode](https://github.com/teletext-archive-unicode) -
+    analyzing trends in news. Here the **titles**, **teasers** and **image texts** of a number of
+    different german papers are stored.
+
+    Learned: That committing a hundred html pages every 15 minutes makes the repository grow
+    to over 700mb in two weeks. That's what happened to the
+    [predecessor](https://github.com/defgsus/frontpage-archive). And i didn't really wanted to
+    wait for github staff to examine and close the repo. The predecessor still collects a snapshot
+    every month. Just to be able to take a look at the raw data once and then..
+
+frontpage-archive:
+  hide: true
+
+teletext-archive-unicode:
+  categories: media archive
+  short_desc: archive of german online teletexts
+  long_desc: |
+    I really liked teletext as a kid. It was looking like computer stuff. Now i'm just scraping
+    it regularily to build some news trend analysis. Well, *news* sounds so regular. Let's say
+    brainwashing dumbf**k that we get poured over our heads from day to night.
+
+teletext-archive:
+  hide: true
+
+kek-online-archive:
+  categories: media archive
+  short_desc: archive of media ownership in germany
+  long_desc: |
+    My first attempt to use the github actions for scraping data. It works quite well
+    (if your repository does not explode in size).
+
+    The KEK is an organisation collecting the shareholder relations of all newspapers, radio
+    and tv stations a.s.o in germany. This repo stores a snapshot of their database every day.
+    So in fact, it actually collects the amount of work that the KEK is spending every day
+    to update their database.
+
+good-github:
+  categories: github archive
+  short_desc: Collector of exceptional / somewhat personal github commit messages - updated daily
+  long_desc: |
+    I was trying to write my own *github trending* that also finds good repos that do not have stars
+    and attention yet. It's [not super easy](https://defgsus.github.io/blog/2021/11/12/gharchive-first-post.html)
+    to process all the github events that exist. In the course of trying i came across some interesting
+    commit messages. *good-github* collects them using a hand-crafted list of words and publishes the
+    messages in a daily journal.
+
+impro:
+  categories: web
+  short_desc: quick and static html renderer
+  long_desc: |
+    Let's see ... if i need it often enough i might actually develop a good thing there..
+
 defgsus:
   hide: true
   language: txt
