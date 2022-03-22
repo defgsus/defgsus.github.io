@@ -86,11 +86,15 @@ brainwashing dumbf**k that we get poured over our heads from day to night.</p></
                             <div class="description short"><p>tool and website for graphing the top shareholders/insiders in (north american) capitalism</p></div>
                             
                                 <div class="description long"><p>I was following some crazy stream of desire to <em>once and for all</em> point the finger at the true
-enemies of beauty and creativity... using the nasdaq.com API. Not the official of course, but their
-own website API which is not restricted by quota. Still it was days and days of downloading to
+enemies of beauty, creativity and well-being of nature and mankind... using the nasdaq.com API.
+Not the official one of course, but their
+internal website API which is not restricted by quota. Still it was days and days of downloading to
 get (probably) the whole graph of shareholders and insiders from the nasdaq database.</p>
-<p>Can i point the finger now? Sure! Blackrock, Vanguard, Fidelity, Price T Rowe, Morgan Stanley,
-Wellington, Bank of America ... simply <a href="https://defgsus.github.io/billion-bubbles/">the big bubbles</a>.</p></div>
+<p>Can i point the finger now? Sure! Blackrock, Vanguard, Fidelity, T. Rowe Price, Morgan Stanley,
+Wellington, Bank of America ... simply <a href="https://defgsus.github.io/billion-bubbles/">the big bubbles</a>.</p>
+<p>It is actually super creepy! The only <em>fun fact</em> i got from this experiments is this:
+Amazon is a little kitten compared to those investment funds. But thinking seriously about it:
+If Amazon already dictates prices and work conditions how f**king mighty is Blackrock?</p></div>
                             
                         </div>
                     </div>
@@ -118,7 +122,8 @@ different german papers are stored.</p>
 to over 700mb in two weeks. That's what happened to the
 <a href="https://github.com/defgsus/frontpage-archive">predecessor</a>. And i didn't really wanted to
 wait for github staff to examine and close the repo. The predecessor still collects a snapshot
-every month. Just to be able to take a look at the raw data once and then..</p></div>
+every month. Just to be able to take a look at the raw data and measure the development of
+applied scripts, ads and tracking.</p></div>
                             
                         </div>
                     </div>
@@ -139,8 +144,7 @@ every month. Just to be able to take a look at the raw data once and then..</p><
                         <div class="inside">
                             <div class="description short"><p>archive of media ownership in germany</p></div>
                             
-                                <div class="description long"><p>My first attempt to use the github actions for scraping data. It works quite well
-(if your repository does not explode in size).</p>
+                                <div class="description long"><p>My first attempt to use the github actions for scraping data.</p>
 <p>The KEK is an organisation collecting the shareholder relations of all newspapers, radio
 and tv stations a.s.o in germany. This repo stores a snapshot of their database every day.
 So in fact, it actually collects the amount of work that the KEK is spending every day
@@ -195,7 +199,7 @@ messages in a daily journal.</p></div>
                         <div class="inside">
                             <div class="description short"><p>quick and static html renderer</p></div>
                             
-                                <div class="description long"><p>Let's see ... if i need it often enough i might actually develop a good thing there..</p></div>
+                                <div class="description long"><p>Let's see ... if i need this often enough i might actually develop a good thing there..</p></div>
                             
                         </div>
                     </div>
@@ -349,7 +353,7 @@ perceived as <em>not in the beat</em>). It's fun though!
                         <div class="inside">
                             <div class="description short"><p>Scraper for (german) free dates at the public offices</p></div>
                             
-                                <div class="description long"><p>This is recording hundrets of public office calendars across germany at an interval of
+                                <div class="description long"><p>This is recording hundreds of public office calendars across germany at an interval of
 15 minutes.</p>
 <p>It's much more work than i anticipated in the first place and i'm still not sure
 exactly for what purpose.</p></div>
@@ -744,6 +748,8 @@ long and complicated formulas.</p></div>
                         <div class="inside">
                             <div class="description short"><p>Define a flow, fill with meaning and then run parallel and persistant jobs.</p></div>
                             
+                                <div class="description long"><p>Just some experiments in the realm of micro services.</p></div>
+                            
                         </div>
                     </div>
                 
@@ -760,6 +766,8 @@ long and complicated formulas.</p></div>
                         </div>
                         <div class="inside">
                             <div class="description short"><p>A generic django-utility that helps to log stuff to the database.</p></div>
+                            
+                                <div class="description long"><p>Quite helpful for a couple of work projects. Not a mature generic lib, though.</p></div>
                             
                         </div>
                     </div>
@@ -778,6 +786,8 @@ long and complicated formulas.</p></div>
                         <div class="inside">
                             <div class="description short"><p>django manage.py task that clears the content of the django Permission and ContentTypes tables</p></div>
                             
+                                <div class="description long"><p>This just good useful to be able to install via pip when moving database content via <code>manage.py dumpdata</code>.</p></div>
+                            
                         </div>
                     </div>
                 
@@ -795,6 +805,14 @@ long and complicated formulas.</p></div>
                         <div class="inside">
                             <div class="description short"><p>Botlove python server and client + webclient</p></div>
                             
+                                <div class="description long"><p>Inspired by the original <em>Botwars</em> for which i don't find the link right now. But <a href="https://botwars.io/">this</a>
+seems to be a somewhat worthy predecessor. Basically it's about playing a competitive game by
+providing source code. The original Botwars was simply a grid of memory cells which are executed and
+which try to overwrite and patch each other. The winner is the one with the most occupied cells.</p>
+<p>My version is more the classic 2D environment, using
+<a href="https://en.wikipedia.org/wiki/Signed_distance_function">signed distance functions</a> which allows for
+easy implementation of distance sensors and the like.</p></div>
+                            
                         </div>
                     </div>
                 
@@ -811,6 +829,12 @@ long and complicated formulas.</p></div>
                         </div>
                         <div class="inside">
                             <div class="description short"><p>Web-view for system logs</p></div>
+                            
+                                <div class="description long"><p>If you rent a second-hand server, e.g. one that has been used for <em>something</em> before, you'll most likely
+get a ton of requests of content that was there before, as well as malicious attacks to all kind of
+ports and, of course, common PHP urls. This project is a django that collects the content of all the log
+files, stores all received POST requests, collects the <em>whois</em> of IPs and also presents
+a honeypot username/password form.</p></div>
                             
                         </div>
                     </div>
@@ -850,6 +874,9 @@ engage in a german <a href="https://en.wikipedia.org/wiki/ELIZA">Eliza</a> thera
                         </div>
                         <div class="inside">
                             <div class="description short"><p>"Musical" pattern generation in python</p></div>
+                            
+                                <div class="description long"><p>Just a plaything with python generators and <em>mathematical</em> note generation. It has some good
+starting point but is not well suited to manage chords or polyphone sequences.</p></div>
                             
                         </div>
                     </div>
@@ -981,6 +1008,14 @@ it externally.</p></div>
                         <div class="inside">
                             <div class="description short"><p>Owning the Fritz!Box with Django</p></div>
                             
+                                <div class="description long"><p>A nasty parent tool to overview what the kids are actually doing on the web. Three reason why
+i did not continue for long:</p>
+<ol>
+<li>They got old enough to truly deserve a private sphere.</li>
+<li>All of them got mobile data contracts at some point.</li>
+<li>This logger tool mostly collected HD video data streams :D</li>
+</ol></div>
+                            
                         </div>
                     </div>
                 
@@ -1035,6 +1070,9 @@ it externally.</p></div>
                         </div>
                         <div class="inside">
                             <div class="description short"><p>afd party's social media leak as a service</p></div>
+                            
+                                <div class="description long"><p>Someone leaked the chat logs of an internal AfD whatsapp group.
+I did some <a href="https://defgsus.github.io/afd-chat/">word statistics</a>.</p></div>
                             
                         </div>
                     </div>
@@ -1119,6 +1157,9 @@ it externally.</p></div>
                         <div class="inside">
                             <div class="description short"><p>simple python vector/matrix lib with focus on geomety</p></div>
                             
+                                <div class="description long"><p>Actually quite proud of it (except the name). No good performance but
+a helpful API for the usual vector-in-space manipulation.</p></div>
+                            
                         </div>
                     </div>
                 
@@ -1156,6 +1197,9 @@ it externally.</p></div>
                         </div>
                         <div class="inside">
                             <div class="description short"><p>Generative parser with runtime syntax definition</p></div>
+                            
+                                <div class="description long"><p>Coming from C++ and playing with yacc/bison i was fascinated by python's real-time everything.
+To be able to create a compiler during runtime was a new thought to me.</p></div>
                             
                         </div>
                     </div>

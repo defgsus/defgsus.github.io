@@ -4,13 +4,17 @@ billion-bubbles:
   short_desc: tool and website for graphing the top shareholders/insiders in (north american) capitalism
   long_desc: |
     I was following some crazy stream of desire to *once and for all* point the finger at the true
-    enemies of beauty and creativity... using the nasdaq.com API. Not the official of course, but their
-    own website API which is not restricted by quota. Still it was days and days of downloading to
+    enemies of beauty, creativity and well-being of nature and mankind... using the nasdaq.com API.
+    Not the official one of course, but their
+    internal website API which is not restricted by quota. Still it was days and days of downloading to
     get (probably) the whole graph of shareholders and insiders from the nasdaq database.
 
-    Can i point the finger now? Sure! Blackrock, Vanguard, Fidelity, Price T Rowe, Morgan Stanley,
+    Can i point the finger now? Sure! Blackrock, Vanguard, Fidelity, T. Rowe Price, Morgan Stanley,
     Wellington, Bank of America ... simply [the big bubbles](https://defgsus.github.io/billion-bubbles/).
 
+    It is actually super creepy! The only *fun fact* i got from this experiments is this:
+    Amazon is a little kitten compared to those investment funds. But thinking seriously about it:
+    If Amazon already dictates prices and work conditions how f**king mighty is Blackrock?
 
 frontpage-archive-2:
   categories: media archive
@@ -24,7 +28,8 @@ frontpage-archive-2:
     to over 700mb in two weeks. That's what happened to the
     [predecessor](https://github.com/defgsus/frontpage-archive). And i didn't really wanted to
     wait for github staff to examine and close the repo. The predecessor still collects a snapshot
-    every month. Just to be able to take a look at the raw data once and then..
+    every month. Just to be able to take a look at the raw data and measure the development of
+    applied scripts, ads and tracking.
 
 frontpage-archive:
   hide: true
@@ -44,8 +49,7 @@ kek-online-archive:
   categories: media archive
   short_desc: archive of media ownership in germany
   long_desc: |
-    My first attempt to use the github actions for scraping data. It works quite well
-    (if your repository does not explode in size).
+    My first attempt to use the github actions for scraping data.
 
     The KEK is an organisation collecting the shareholder relations of all newspapers, radio
     and tv stations a.s.o in germany. This repo stores a snapshot of their database every day.
@@ -66,7 +70,7 @@ impro:
   categories: web
   short_desc: quick and static html renderer
   long_desc: |
-    Let's see ... if i need it often enough i might actually develop a good thing there..
+    Let's see ... if i need this often enough i might actually develop a good thing there..
 
 defgsus:
   hide: true
@@ -141,7 +145,7 @@ office-schedule-scraper:
   short_desc: |
     Scraper for (german) free dates at the public offices
   long_desc: |
-    This is recording hundrets of public office calendars across germany at an interval of
+    This is recording hundreds of public office calendars across germany at an interval of
     15 minutes.
 
     It's much more work than i anticipated in the first place and i'm still not sure
@@ -320,31 +324,48 @@ processflow:
   categories: lib
   short_desc: |
     Define a flow, fill with meaning and then run parallel and persistant jobs.
-  long_desc: ''
+  long_desc: |
+    Just some experiments in the realm of micro services.
 
 django-joblog:
   categories: lib
   short_desc: |
     A generic django-utility that helps to log stuff to the database.
-  long_desc: ''
+  long_desc: |
+    Quite helpful for a couple of work projects. Not a mature generic lib, though.
 
 django-clear-tables:
   categories: lib
   short_desc: |
     django manage.py task that clears the content of the django Permission and ContentTypes tables
-  long_desc: ''
+  long_desc: |
+    This just good useful to be able to install via pip when moving database content via `manage.py dumpdata`.
 
 lovebot:
   categories: game
   short_desc: |
     Botlove python server and client + webclient
-  long_desc: ''
+  long_desc: |
+    Inspired by the original *Botwars* for which i don't find the link right now. But [this](https://botwars.io/)
+    seems to be a somewhat worthy predecessor. Basically it's about playing a competitive game by
+    providing source code. The original Botwars was simply a grid of memory cells which are executed and
+    which try to overwrite and patch each other. The winner is the one with the most occupied cells.
+
+    My version is more the classic 2D environment, using
+    [signed distance functions](https://en.wikipedia.org/wiki/Signed_distance_function) which allows for
+    easy implementation of distance sensors and the like.
+
 
 logmonitor:
   categories: web
   short_desc: |
     Web-view for system logs
-  long_desc: ''
+  long_desc: |
+    If you rent a second-hand server, e.g. one that has been used for *something* before, you'll most likely
+    get a ton of requests of content that was there before, as well as malicious attacks to all kind of
+    ports and, of course, common PHP urls. This project is a django that collects the content of all the log
+    files, stores all received POST requests, collects the *whois* of IPs and also presents
+    a honeypot username/password form.
 
 brain-discord:
   categories: web
@@ -360,7 +381,9 @@ musicpatterns:
   categories: audio
   short_desc: |
     "Musical" pattern generation in python
-  long_desc: ''
+  long_desc: |
+    Just a plaything with python generators and *mathematical* note generation. It has some good
+    starting point but is not well suited to manage chords or polyphone sequences.
 
 bm-wahl-18-jena:
   categories: data
@@ -408,7 +431,13 @@ fritztrack:
   categories: web privacy
   short_desc: |
     Owning the Fritz!Box with Django
-  long_desc: ''
+  long_desc: |
+    A nasty parent tool to overview what the kids are actually doing on the web. Three reason why
+    i did not continue for long:
+
+    1. They got old enough to truly deserve a private sphere.
+    2. All of them got mobile data contracts at some point.
+    3. This logger tool mostly collected HD video data streams :D
 
 wahl17:
   categories: data
@@ -426,7 +455,9 @@ afd-chat:
   categories: data language
   short_desc: |
     afd party's social media leak as a service
-  long_desc: ''
+  long_desc: |
+    Someone leaked the chat logs of an internal AfD whatsapp group.
+    I did some [word statistics](https://defgsus.github.io/afd-chat/).
 
 neurotools:
   categories: lib ml
@@ -450,7 +481,9 @@ pector:
   categories: lib visual
   short_desc: |
     simple python vector/matrix lib with focus on geomety
-  long_desc: ''
+  long_desc: |
+    Actually quite proud of it (except the name). No good performance but
+    a helpful API for the usual vector-in-space manipulation.
 
 QShadertoy:
   categories: visual shader
@@ -462,7 +495,9 @@ Syntak:
   categories: lib compiler
   short_desc: |
     Generative parser with runtime syntax definition
-  long_desc: ''
+  long_desc: |
+    Coming from C++ and playing with yacc/bison i was fascinated by python's real-time everything.
+    To be able to create a compiler during runtime was a new thought to me.
 
 sonot:
   categories: audio
