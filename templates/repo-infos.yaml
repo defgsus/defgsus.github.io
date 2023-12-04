@@ -1,5 +1,5 @@
 investigate-news:
-  categories: data media
+  categories: data media language
   short_desc: Personal playground for data collection and examination
   long_desc: |
     A collection of code that aggregates the `archive` repos.
