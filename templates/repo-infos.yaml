@@ -1,3 +1,77 @@
+investigate-news:
+  categories: data media
+  short_desc: Personal playground for data collection and examination
+  long_desc: |
+    A collection of code that aggregates the `archive` repos.
+
+nn-experiments:
+  categories: ml
+  short_desc: playground for neural nets
+  long_desc: |
+    Recently spent all neural net coding in this repository. Sometimes i browse arxiv.org, and 
+    try to implement a technique from the next paper. And, of course, i have my own artistic
+    desires.
+
+magic-pen:
+  categories: ml
+  short_desc: more experiments with machine-learning image creation
+  long_desc: ''
+
+microjazz:
+  hide: true
+  categories: audio web
+  short_desc: Fork of A module music player for playing .xm, .mod, .s3m tracker jazz in the browser
+  long_desc: ''
+
+cellular-intelligence:
+  categories: ml
+  short_desc: some tests to combine cellular automata and neural networks
+  long_desc: |
+    Some experiments i wanted to save. Superseded by [nn-experiments](#nn-experiments)!
+
+defgsus-music:
+  categories: music
+  short_desc: Release of my 90ies electronic music
+  long_desc: |
+    An abundance of S3M files from my early days.
+
+teletext-viewer:
+  categories: web archive
+  short_desc: A browser-based teletext viewer from archived data of a couple of german stations.
+  long_desc: |
+    A web page that shows teletext pages through history!
+
+tv-archive:
+  categories: archive media
+  short_desc: archive of (mostly german) TV program
+  long_desc: |
+    I don't watch TV, i just collect the programme for *statistical reasons*.
+
+giterator:
+  categories: data
+  short_desc: A python iterator through git commits.
+  long_desc: |
+    A generic tool for all the archive repositories. Makes it easy to iterate through all
+    commits and the individual file data.
+
+teletext-archive-2023:
+  categories: archive media
+  short_desc: daily commits of german teletext pages
+  long_desc: Continuation of [teletext-archive-unicode](#teletext-archive-unicode)
+
+frontpage-archive-2023:
+  categories: archive media
+  short_desc: hourly commits of german online press headlines
+  long_desc: Continuation of [frontpage-archive-2](#frontpage-archive-2)
+
+botwars-io:
+  categories: game
+  short_desc: local simulator and collection of tools for https://botwars.io
+  long_desc: |
+    Unfortunately, the site went down. It was hosting little programs that fight each other in
+    a little square grid. I developed a local simulator and designed the number one battle bot:
+    
+    ![botwars snapshot](./img/botwars.png)
 
 billion-bubbles:
   categories: data web
@@ -432,7 +506,7 @@ fritztrack:
   short_desc: |
     Owning the Fritz!Box with Django
   long_desc: |
-    A nasty parent tool to overview what the kids are actually doing on the web. Three reason why
+    A nasty parent tool to overview what the kids are actually doing on the web. Three reasons why
     i did not continue for long:
 
     1. They got old enough to truly deserve a private sphere.
@@ -514,7 +588,7 @@ csmod040:
 beat-detect:
   categories: lib audio
   short_desc: |
-    Attempt to refacture Rob Harper's beat-detect code into a useable cross-platform library
+    Attempt to refactor Rob Harper's beat-detect code into a usable cross-platform library
   long_desc: ''
 
 solstice:
@@ -588,7 +662,8 @@ ttt:
   categories: game ml
   short_desc: |
     TicTacToe With Capturing - engine
-  long_desc: ''
+  long_desc: |
+    Wrote it to get a grip on *alpha beta tree search*
 
 csmod2:
   categories: audio visual

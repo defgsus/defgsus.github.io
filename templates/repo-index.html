@@ -11,7 +11,7 @@
 
     <div class="bob-image">
         <a href="http://subgenius.com/">
-            <img src="img/bob.png">
+            <img src="img/bob.png" alt="The face of 'Bob Dobbs'!">
         </a>
     </div>
 </div>
@@ -24,7 +24,7 @@
                 {% for repo in repo_list %}
                     <div class="repo" id="{{repo.name}}" data-tags="{{' '.join(repo.tags)}}">
                         <div class="flex-row">
-                            <img class="language" src="img/tags/{{repo.language}}.png" title="{{repo.language}}">
+                            <img class="language" src="img/tags/{{repo.language}}.png" title="{{repo.language}}" alt="icon of {{repo.language}} programming language">
                             <div class="name margin-right"><a href="{{repo.url}}">{{repo.name}}</a></div>
                             <div class="tags grow">
                                 {% for tag in repo.tags %}
