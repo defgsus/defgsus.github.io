@@ -1,8 +1,42 @@
+matrix-optimizer-3:
+  categories: audio video fulldome
+  short_desc: Archive of the audio-visual fulldome software Matrix Optimizer 3
+  long_desc: |
+    This was my fulltime work between 2013 and 2016. An audio-visual fulldome 
+    production and live software with **a lot** of nifty features. 
+
+django-filer:
+  hide: true
+
+noscript-chat:
+  categories: web
+  short_desc: python version of [github.com/wybiral/noscript-chat](https://github.com/wybiral/noscript-chat)
+  long_desc: |
+    Put this on a server, turn off the network logging and you have an anonymous
+    live chat without database, cookies or even javascript.
+
+pixelart-dataset:
+  categories: ml visual
+  short_desc: Dataset of open-source tile-based pixel-art game graphics
+  long_desc: |
+    Currently it contains about 47,000 (small) images in about 30 categories. 
+    Still some way to go...
+
+frontpage-archive-2024:
+  categories: archive media
+  short_desc: hourly commits of german online press headlines
+  long_desc: Continuation of [frontpage-archive-2](#frontpage-archive-2)
+
+teletext-archive-2024:
+  categories: archive media
+  short_desc: daily commits of german teletext pages
+  long_desc: Continuation of [teletext-archive-unicode](#teletext-archive-unicode)
+
 investigate-news:
   categories: data media language
   short_desc: Personal playground for data collection and examination
   long_desc: |
-    A collection of code that aggregates the `archive` repos.
+    A collection of code that aggregates my various `archive` repos.
 
 nn-experiments:
   categories: ml
@@ -15,7 +49,12 @@ nn-experiments:
 magic-pen:
   categories: ml
   short_desc: more experiments with machine-learning image creation
-  long_desc: ''
+  long_desc: |
+    The idea is basically to write or extend a drawing application with a *"magic pen"* 
+    that allows configuration through a text prompt. E.g. "pixelart mid-age mossy stone"
+    and then draw on an existing graphic to adjust the details. Work is currently 
+    superseded by the [CLIPig2](https://github.com/defgsus/nn-experiments?tab=readme-ov-file#clipig-2) implementation
+    in [nn-experiments](#nn-experiments).
 
 microjazz:
   hide: true
@@ -580,7 +619,7 @@ sonot:
   long_desc: ''
 
 csmod040:
-  categories: audio visual
+  categories: audio visual fulldome
   short_desc: |
     CS Modular Editor
   long_desc: ''
@@ -666,7 +705,7 @@ ttt:
     Wrote it to get a grip on *alpha beta tree search*
 
 csmod2:
-  categories: audio visual
+  categories: audio visual fulldome
   short_desc: |
     CymaSonics Modular II - A modular audio/video framework in Qt
   long_desc: ''

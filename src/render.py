@@ -129,6 +129,8 @@ def render_index():
             date_first = repo_dates[repo["name"]][0][:10]
             date_last = repo_dates[repo["name"]][-1][:10]
 
+            year = date_first[:4]
+
             if date_first == date_last:
                 date_str = date_first
             elif (datetime.date.today() - datetime.datetime.strptime(date_last, "%Y-%m-%d").date()).days < 30:
@@ -161,6 +163,11 @@ def render_index():
 
     for year, (repos, tags) in repos_by_year.items():
         repos_by_year[year] = (repos, " ".join(sorted(tags)))
+
+    repos_by_year = {
+        year: repos_by_year[year]
+        for year in sorted(repos_by_year, reverse=True)
+    }
 
     markup = template.render(**{
         "meta": {
